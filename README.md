@@ -1,4 +1,6 @@
-# jsonresume-theme-kendall
+# jsonresume-theme-papanito
+
+> Credits go to [jsonresume-theme-kendall](https://github.com/LinuxBozo/jsonresume-theme-kendall) which created the initial theme. I've just made some modifications to fit my needs
 
 A theme for JSONResume, that relies on Bootstrap and FontAwesome, added with some personal flair.
 
@@ -8,7 +10,7 @@ To first get started with this JSONResume theme, you'll need to have the JSONRes
 
 After this, you can get your resume.json ready by typing `resume init`. After hitting enter, your resume will be initialized and you can edit it and fill in the neccessary fields. Check out [the official resume-schema repository](https://github.com/jsonresume/resume-schema) for more information on filling these fields.
 
-When you are finished with your resume, you may test it by yet again opening the command line and typing `resume serve --theme kendall` to see how it looks with this theme. You can replace the word `kendall` with other theme names too.
+When you are finished with your resume, you may test it by yet again opening the command line and typing `resume serve --theme papanito` to see how it looks with this theme. You can replace the word `papanito` with other theme names too.
 
 ### Install the command line
 
@@ -16,7 +18,7 @@ We're going to use the official [resume-cli](https://github.com/jsonresume/resum
 
 Go ahead and install it:
 
-```
+```bash
 sudo npm install -g resume-cli
 ```
 
@@ -34,13 +36,13 @@ This will read the local `package.json` and install the packages listed under `d
 
 While inside the theme folder, simply run:
 
-```
+```bash
 resume serve --theme .
 ```
 
 You should now see this message:
 
-```
+```bash
 Preview: http://localhost:4000
 Press ctrl-c to stop
 ```
