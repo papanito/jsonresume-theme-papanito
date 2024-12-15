@@ -6,19 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Resume of {{basics.name}}</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/30ebcf4eef.js" crossorigin="anonymous"></script>
     <style type="text/css">
     {{{css}}}
     </style>
-    <style type="text/css" media="print">
+    <!-- <style type="text/css" media="print">
     {{{printcss}}}
-    </style>
+    </style> -->
   </head>
   <body>
-    <div class="container">
+    <div class="container" id="summary">
       <div class="row">
-        <div class="col-xs-12">
+        <div class="col-sm">
           <div id="photo-header" class="text-center">
             <!-- PHOTO (AVATAR) -->
             {{#photo}}
@@ -33,6 +34,37 @@
         </div>
       </div>
       <div class="row">
+        <div class="col-sm" id="info">
+          {{#basics.email}}
+          <div class="contact-item">
+            <div class="icon pull-left text-center"><span class="fa fa-envelope fa-fw"></span></div>
+            <div class="title only pull-right"><a href="mailto:{{basics.email}}" target="_blank">{{basics.email}}</a></div>
+          </div>
+          {{/basics.email}}
+        </div>
+        <div class="col-sm" id="info">
+          <div class="contact-item">
+          One of three columns
+          </div>
+        </div>
+        <div class="col-sm" id="info">
+          {{#basics.phone}}
+          <div class="contact-item">
+            <div class="icon pull-left text-center"><span class="fa fa-phone fa-fw"></span></div>
+            <div class="title only pull-right">{{basics.phone}}</div>
+          </div>
+          {{/basics.phone}}
+        </div>
+        <div class="col-sm" id="info">
+          {{#basics.location}}
+          <div class="contact-item">
+            <div class="icon pull-left text-center"><span class="fa fa-map-marker fa-fw"></span></div>
+            <div class="title only pull-right">{{basics.location.city}}{{#basics.location.region}}, {{basics.location.region}}{{/basics.location.region}}{{#basics.location.postalCode}} {{basics.location.postalCode}}{{/basics.location.postalCode}}{{#basics.location.countryCode}} {{basics.location.countryCode}}{{/basics.location.countryCode}}</div>
+          </div>
+          {{/basics.location}}
+        </div>
+      </div>
+      <div class="row">
         <div class="col-xs-12 col-sm-7">
           {{#basics.summary}}
           <!-- ABOUT ME -->
@@ -44,7 +76,6 @@
           {{#workBool}}
           <!-- WORK EXPERIENCE -->
           <div class="box">
-            <h2><i class= "fa fa-suitcase ico"></i> Work Experience</h2>
             {{#work}}
               <div class="job clearfix">
                 <div class="row">
@@ -76,6 +107,23 @@
                 </div>
               </div>
             {{/work}}
+          </div>
+
+          <div class="box">
+            <h2><i class= "fa fa-suitcase ico"></i> Work Experience</h2>
+            <ul id="work" class="clearfix">
+              {{#work}}
+              <li>
+                <div class="description pull-right">
+                  <h3>{{name}}</h3>
+                  <p><i class="fa fa-location ico"></i> {{company}}</p>
+                  <p>{{{summaryShort}}}</p>
+                </div>
+                <div class="year-start pull-left">{{startDateYear}} {{startDateMonthShort}}</div>
+                <div class="year pull-left">{{endDateYear}} {{endDateMonthShort}}</div>
+              </li>
+              {{/work}}
+            </ul>
           </div>
           {{/workBool}}
           {{#awardsBool}}
@@ -138,25 +186,6 @@
           <!-- CONTACT -->
           <div class="box clearfix">
             <h2><i class="fa fa-bullseye ico"></i> Contact</h2>
-            {{#basics.location}}
-            <div class="contact-item">
-              <div class="icon pull-left text-center"><span class="fa fa-map-marker fa-fw"></span></div>
-              {{#basics.location.address}}<div class="title pull-right">{{basics.location.address}}</div>{{/basics.location.address}}
-              <div class="title {{^basics.location.address}}only {{/basics.location.address}} pull-right">{{basics.location.city}}{{#basics.location.region}}, {{basics.location.region}}{{/basics.location.region}}{{#basics.location.postalCode}} {{basics.location.postalCode}}{{/basics.location.postalCode}}{{#basics.location.countryCode}} {{basics.location.countryCode}}{{/basics.location.countryCode}}</div>
-            </div>
-            {{/basics.location}}
-            {{#basics.phone}}
-            <div class="contact-item">
-              <div class="icon pull-left text-center"><span class="fa fa-phone fa-fw"></span></div>
-              <div class="title only pull-right">{{basics.phone}}</div>
-            </div>
-            {{/basics.phone}}
-            {{#basics.email}}
-            <div class="contact-item">
-              <div class="icon pull-left text-center"><span class="fa fa-envelope fa-fw"></span></div>
-              <div class="title only pull-right"><a href="mailto:{{basics.email}}" target="_blank">{{basics.email}}</a></div>
-            </div>
-            {{/basics.email}}
             {{#basics.website}}
             <div class="contact-item">
               <div class="icon pull-left text-center"><span class="fa fa-globe fa-fw"></span></div>
@@ -166,8 +195,7 @@
             {{#basics.profiles}}
             <div class="contact-item">
               <div class="icon pull-left text-center"><span class="{{iconClass}} fa-fw"></span></div>
-              <div class="title pull-right">{{network}}</div>
-              <div class="description pull-right"><a href="{{url}}" target="_blank">{{#username}}{{username}}{{/username}}{{^username}}{{url}}{{/username}}</a></div>
+              <div class="title only pull-right"><a href="{{url}}" target="_blank">{{#username}}{{username}}{{/username}}{{^username}}{{url}}{{/username}}</a></div>
             </div>
             {{/basics.profiles}}
           </div>
@@ -180,9 +208,8 @@
               <li>
                 <div class="year pull-left">{{startDateYear}} {{endDateYear}}</div>
                 <div class="description pull-right">
-                  <h3>{{institution}}</h3>
-                  {{#studyType}}<p><i class= "fa fa-graduation-cap ico"></i> {{studyType}}</p>{{/studyType}}
-                  <p>{{area}}</p>
+                  <h3>{{area}} ({{studyType}})</h3>
+                  {{#institution}}<p><i class= "fa fa-graduation-cap ico"></i> {{institution}}</p>{{/institution}}
                   {{#gpa}}
                   <p>
                     GPA: {{gpa}}
@@ -294,5 +321,62 @@
       </div>
     </div>
 
+    <div class="container" id="details">
+      {{#workBool}}
+      <!-- WORK EXPERIENCE -->
+      <div class="box">
+        <h2><i class= "fa fa-suitcase ico"></i> Work Experience Details</h2>
+        <ul id="work" class="clearfix">
+          {{#work}}
+          <li>
+            <div class="description pull-right">
+              <h3>{{name}}</h3>
+              <p><i class="fa fa-industry"></i> {{company}}</p>
+              <p>{{{summary}}}</p>
+              <div>
+                <div class="row">
+                  <div class="col-8">
+                    {{#boolHighlights}}
+                    <div class="highlights"><h4>Tasks</h4></div>
+                    <ul class="list">
+                      {{#highlights}}
+                      <p><i class="fa-solid fa-building"></i> {{{.}}}</p>
+                      {{/highlights}}
+                    </ul>
+                    {{/boolHighlights}}
+                  </div>
+                  <div class="col-sm">
+                    {{#boolTools}}
+                    <div class="highlights"><h4>Devlopment and test Environment</h4></div>
+                    <ul class="list">
+                      {{#tools}}
+                      <p><i class="fa-solid fa-building"></i> {{{.}}}</p>
+                      {{/tools}}
+                    </ul>
+                    {{/boolTools}}
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm">
+                  {{#boolAchievements}}
+                  <div class="highlights"><h4>Achievements</h4></div>
+                  <ul class="list">
+                    {{#achievements}}
+                    <p><i class="fa-solid fa-trophy">&nbsp;</i>{{{.}}}</p>
+                    {{/achievements}}
+                  </ul>
+                  {{/boolAchievements}}
+                </div>
+              </div>
+            </div>
+            <div class="year-start pull-left">{{startDateYear}} {{startDateMonthShort}}</div>
+            <div class="year pull-left">{{endDateYear}} {{endDateMonthShort}}</div>
+          </li>
+          {{/work}}
+        </ul>
+      </div>
+      {{/workBool}}
+    </div>
   </body>
 </html>

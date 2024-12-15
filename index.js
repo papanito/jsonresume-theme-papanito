@@ -109,18 +109,35 @@ function render(resumeObject) {
             if (w.startDate) {
                 w.startDateYear = (w.startDate || "").substr(0,4);
                 w.startDateMonth = getMonth(w.startDate || "");
-
+                w.startDateMonthShort = getMonth(w.startDate || "").substr(0,3);
             }
             if(w.endDate) {
                 w.endDateYear = (w.endDate || "").substr(0,4);
                 w.endDateMonth = getMonth(w.endDate || "");
+                w.endDateMonthShort = getMonth(w.endDate || "").substr(0,3);
             } else {
                 w.endDateYear = 'Present'
+                w.endDateMonthShort = '';
             }
             if (w.highlights) {
                 if (w.highlights[0]) {
                     if (w.highlights[0] != "") {
                         w.boolHighlights = true;
+                    }
+                }
+            }
+
+            if (w.achievements) {
+                if (w.achievements[0]) {
+                    if (w.achievements[0] != "") {
+                        w.boolAchievements = true;
+                    }
+                }
+            }
+            if (w.tools) {
+                if (w.tools[0]) {
+                    if (w.tools[0] != "") {
+                        w.boolTools = true;
                     }
                 }
             }
