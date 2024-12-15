@@ -54,7 +54,7 @@
                     <div class="address">
                       <a href="{{website}}" target= "_blank"><i class="fa fa-globe ico"></i> {{website}}</a>
                     </div>
-                    {{/website}}
+                    {{/url}}
                     <div class="year">{{startDateMonth}}{{startDateYear}} – {{endDateMonth}}{{endDateYear}}</div>
                   </div>
                 </div>
