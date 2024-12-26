@@ -9,6 +9,7 @@
   "author": "A. Wyssmann",
   "license": "MIT",
   "dependencies": {
+    "bootstrap": "^5.3.3",
     "gravatar": "^1.0.6",
     "lodash": "^2.4.1",
     "mustache": "^2.2.1"

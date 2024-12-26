@@ -351,3 +351,21 @@ ul.list>li {
   vertical-align: top;
   margin-bottom: 0%;
 }
+
+.fa, .fa-brands, .fa-regular, .fa-solid, .fab, .far, .fas {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: var(--fa-display,inline-block);
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
