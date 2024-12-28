@@ -144,6 +144,8 @@ function render(resumeObject) {
         });
     }
 
+    resumeObject.workSummary = resumeObject.work.slice(0,4);
+
     if (resumeObject.volunteer && resumeObject.volunteer.length) {
         resumeObject.volunteerBool = true;
         _.each(resumeObject.volunteer, function(w){

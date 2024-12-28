@@ -2,7 +2,14 @@
 
 > Credits go to [jsonresume-theme-kendall](https://github.com/LinuxBozo/jsonresume-theme-kendall) which created the initial theme. I've just made some modifications to fit my needs
 
-A theme for JSONResume, that relies on Bootstrap and FontAwesome, added with some personal flair.
+A theme for JSONResume, that relies on [Bootstrap 5](https://getbootstrap.com/) and [FontAwesome 6](https://fontawesome.com), added with some personal flair.
+
+## About the theme
+
+The them focus on printing a PDF in A4:
+
+- primary page contains some sumamry (first glance)
+- second page forward shows work details, skills, etc.
 
 ## Usage
 

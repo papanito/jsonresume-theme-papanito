@@ -1,10 +1,33 @@
+@page {
+  size: 21cm 29.7cm;
+  margin: 1rem;
+}
+
 body {
-  font-size: .95em;
+  font-size: .85em;
   -webkit-print-color-adjust: exact;
+  /* --bs-border-radius: 2px; */
+  background: white;
+}
+
+.text-header h1,
+.box h2,
+#education .description h3
+#work .description h3{
+  font-size: 1em;
+}
+
+p {
+  margin-bottom: 0.2rem;
 }
 
 a[href]:after {
   content: none !important;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
 }
 
 #photo{
@@ -50,11 +73,6 @@ blockquote,
   background: none;
 }
 
-#awards .description,
-#education .description,
-.job .details {
-  border: 1px solid #eee;
-}
 .publication,
 .publication .panel-heading,
 .publication .name{
@@ -66,9 +84,13 @@ blockquote,
   padding: 0 10px;
   margin: 0;
 }
-
+ul#work {
+  padding-top: 0px;
+}
 .badge {
-  margin: 0;
+  margin: 2px;
+  font-size: 0.8em;
+  /* --bs-badge-border-radius: var(--bs-border-radius); */
 }
 
 .list-group-item{
@@ -76,6 +98,7 @@ blockquote,
   margin: 0;
   padding: 5px 15px;
 }
+
 .list-group-item:after{
   content: '';
   position: absolute;
@@ -89,3 +112,37 @@ blockquote,
   border-width: 4px;
   pointer-events: none;
  }
+
+ /* .pull-right {
+  margin-top: 30px;
+  margin-bottom: 30px;
+ } */
+
+#awards .year,
+#work .year-start,
+#work .year{
+  width: 60px;
+}
+
+#info,
+#education list {
+  display: none;
+}
+
+#education .year,
+#education .year-start{
+  width: 40px;
+}
+
+
+#details{
+  page-break-before: always;
+}
+
+/* #work li{
+  page-break-before: auto;
+} */
+
+contact-item .icon {
+  padding: 0px;
+}
