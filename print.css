@@ -12,10 +12,15 @@ body {
 
 .text-header h1,
 .box h2,
-#education .description h3
+#awards .description h3,
+#education .description h3,
 #work .description h3{
-  font-size: 1em;
+  font-size: 1.0em;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
 }
+
 
 p {
   margin-bottom: 0.2rem;
@@ -131,7 +136,7 @@ ul#work {
 
 #education .year,
 #education .year-start{
-  width: 40px;
+  width: 60px;
 }
 
 
@@ -143,6 +148,8 @@ ul#work {
   page-break-before: auto;
 } */
 
-contact-item .icon {
+.§contact-item .icon,
+.contact-item .title.only {
+  margin-top: 0px;
   padding: 0px;
 }

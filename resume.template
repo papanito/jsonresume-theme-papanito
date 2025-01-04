@@ -36,20 +36,23 @@
         <div class="col-sm" id="info">
           {{#basics.email}}
           <div class="contact-item">
-            <div class="icon pull-left text-center"><span class="fa fa-envelope fa-fw"></span></div>
+            <div class="icon pull-left text-right"><span class="fa fa-envelope fa-fw"></span></div>
             <div class="title only pull-right"><a href="mailto:{{basics.email}}" target="_blank">{{basics.email}}</a></div>
           </div>
           {{/basics.email}}
         </div>
         <div class="col-sm" id="info">
+          {{#basics.url}}
           <div class="contact-item">
-          One of three columns
+            <div class="icon pull-left text-right"><span class="fa fa-globe fa-fw"></span></div>
+            <div class="title only pull-right"><a href="{{basics.url}}" target="_blank">{{basics.url}}</a></div>
           </div>
+          {{/basics.url}}
         </div>
         <div class="col-sm" id="info">
           {{#basics.phone}}
           <div class="contact-item">
-            <div class="icon pull-left text-center"><span class="fa fa-phone fa-fw"></span></div>
+            <div class="icon pull-left text-right"><span class="fa fa-phone fa-fw"></span></div>
             <div class="title only">{{basics.phone}}</div>
           </div>
           {{/basics.phone}}
@@ -57,7 +60,7 @@
         <div class="col-sm" id="info">
           {{#basics.location}}
           <div class="contact-item">
-            <div class="icon pull-left text-center"><span class="fa fa-map-marker fa-fw"></span></div>
+            <div class="icon pull-left text-right"><span class="fa fa-map-marker fa-fw"></span></div>
             <div class="title only">{{basics.location.city}}, {{basics.location.region}}</div>
           </div>
           {{/basics.location}}
@@ -84,68 +87,35 @@
                   <p><i class="fa-solid fa-building ico">&nbsp;</i>{{company}} {{location}}</p>
                   <p>{{{summaryShort}}}</p>
                 </div>
-                <div class="year-start pull-left">{{startDateYear}} {{startDateMonthShort}}</div>
-                <div class="year pull-left">{{endDateYear}} {{endDateMonthShort}}</div>
+                <div class="year-start pull-left">{{startDateYear}}&nbsp;&nbsp;{{startDateMonthShort}}</div>
+                <div class="year pull-left">{{endDateYear}}&nbsp;&nbsp;{{endDateMonthShort}}</div>
               </li>
               {{/workSummary}}
             </ul>
           </div>
           {{/workBool}}
-          {{#awardsBool}}
-          <!-- AWARDS -->
+          {{#educationBool}}
+          <!-- EDUCATION -->
           <div class="box">
-            <h2><i class="fa fa-certificate ico"></i> Awards</h2>
-            <ul id="awards" class="clearfix">
-              {{#awards}}
+            <h2><i class="fa fa-university ico"></i> Education</h2>
+            <ul id="education" class="clearfix">
+              {{#education}}
               <li>
-                <div class="year pull-left">{{month}} {{year}}</div>
+                <div class="year-start pull-left">{{startDateYear}}&nbsp;&nbsp;{{startDateMonthShort}}</div>
+                <div class="year pull-left">{{endDateYear}}&nbsp;&nbsp;{{endDateMonthShort}}</div>
                 <div class="description pull-right">
-                  <h3>{{awarder}}</h3>
-                  <p><i class="fa fa-trophy ico"></i> {{title}}</p>
-                  <p>{{{summary}}}</p>
+                  <h3>{{area}} ({{studyType}})</h3>
+                  {{#institution}}
+                  <p><i class= "fa fa-graduation-cap ico"></i> {{institution}}</p>
+                  <p>{{summary}}<br><b>Speciality:</b> {{speciality}}</p>
+                  {{/institution}}
                 </div>
               </li>
-              {{/awards}}
+              {{/education}}
             </ul>
           </div>
-          {{/awardsBool}}
-          {{#volunteerBool}}
-          <!-- VOLUNTEER -->
-          <div class="box">
-            <h2><i class= "fa fa-group ico"></i> Volunteer</h2>
-            {{#volunteer}}
-              <div class="job clearfix">
-                <div class="row">
-                  <div class="details">
-                    <div class="where">{{organization}}</div>
-                    {{#website}}
-                    <div class="address">
-                      <a href="{{website}}" target= "_blank"><i class="fa fa-globe ico"></i> {{website}}</a>
-                    </div>
-                    {{/website}}
-                    <div class="year">{{startDateMonth}}{{startDateYear}} – {{endDateMonth}}{{endDateYear}}</div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-xs-11 pull-right">
-                    <div class="profession">{{position}}</div>
-                    <div class="description">
-                      {{{summary}}}
-                      {{#boolHighlights}}
-                      <div class="highlights">Highlights</div>
-                      <ul class="list-group">
-                        {{#highlights}}
-                        <li class="list-group-item">{{{.}}}</li>
-                        {{/highlights}}
-                      </ul>
-                      {{/boolHighlights}}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            {{/volunteer}}
-          </div>
-          {{/volunteerBool}}
+          {{/educationBool}}
+
         </div>
         <div class="col-xs-12 col-sm-5">
           <!-- CONTACT -->
@@ -169,12 +139,12 @@
               <div class="title only pull-right"><a href="mailto:{{basics.email}}" target="_blank">{{basics.email}}</a></div>
             </div>
             {{/basics.email}}
-            {{#basics.website}}
-            <div class="contact-item">
+            {{#basics.url}}
+            <div class="contact-item hide">
               <div class="icon pull-left text-center"><span class="fa fa-globe fa-fw"></span></div>
-              <div class="title only pull-right"><a href="{{basics.website}}" target="_blank">{{basics.website}}</a></div>
+              <div class="title only pull-right"><a href="{{basics.url}}" target="_blank">{{basics.url}}</a></div>
             </div>
-            {{/basics.website}}
+            {{/basics.url}}
             {{#basics.profiles}}
             <div class="contact-item">
               <div class="icon pull-left text-center"><span class="{{iconClass}} fa-fw"></span></div>
@@ -182,67 +152,6 @@
             </div>
             {{/basics.profiles}}
           </div>
-          {{#educationBool}}
-          <!-- EDUCATION -->
-          <div class="box">
-            <h2><i class="fa fa-university ico"></i> Education</h2>
-            <ul id="education" class="clearfix">
-              {{#education}}
-              <li>
-                <div class="year-start pull-left">{{startDateYear}}</div>
-                <div class="year pull-left">{{endDateYear}}</div>
-                <div class="description pull-right">
-                  <h3>{{area}} ({{studyType}})</h3>
-                  {{#institution}}
-                  <p><i class= "fa fa-graduation-cap ico"></i> {{institution}}</p>
-                  <p>{{details}}</p>
-                  {{/institution}}
-                  {{#gpa}}
-                  <p>
-                    GPA: {{gpa}}
-                  </p>
-                  {{/gpa}}
-                  {{#educationCourses}}
-                  <ul class="list">
-                    {{#courses}}
-                      <li><i class="fa-solid fa-book">&nbsp;</i>{{{.}}}</li>
-                    {{/courses}}
-                  </ul>
-                  {{/educationCourses}}
-                </div>
-              </li>
-              {{/education}}
-            </ul>
-          </div>
-          {{/educationBool}}
-
-          {{#publicationsBool}}
-          <!-- PUBLICATIONS -->
-          <div class="box">
-            <h2><i class="fa fa-book ico"></i> Publications</h2>
-            {{#publications}}
-            <div class="publication panel panel-default">
-              <div class="panel-heading">
-                <div class="name panel-title">{{name}}</div>
-              </div>
-              <div class="panel-body">
-                {{#publisher}}
-                <div class="publisher"><i class= "fa fa-bookmark ico"></i> {{publisher}}</div>
-                {{/publisher}}
-                <div class="year">{{day}} {{month}} {{year}}</div>
-                {{#website}}
-                <div class="address">
-                  <a href="{{website}}" target= "_blank"><i class="fa fa-globe ico"></i> {{website}}</a>
-                </div>
-                {{/website}}
-                {{#summary}}
-                <p>{{{summary}}}</p>
-                {{/summary}}
-              </div>
-            </div>
-            {{/publications}}
-          </div>
-          {{/publicationsBool}}
           {{#languagesBool}}
           <!-- LANGUAGES -->
           <div class="box">
@@ -325,8 +234,8 @@
                 </div>
               </div>
             </div>
-            <div class="year-start pull-left">{{startDateYear}} {{startDateMonthShort}}</div>
-            <div class="year pull-left">{{endDateYear}} {{endDateMonthShort}}</div>
+            <div class="year-start pull-left">{{startDateYear}}&nbsp;&nbsp;{{startDateMonthShort}}</div>
+            <div class="year pull-left">{{endDateYear}}&nbsp;&nbsp;{{endDateMonthShort}}</div>
           </li>
           {{/work}}
         </ul>
@@ -347,6 +256,40 @@
         {{/references}}
       </div>
       {{/referencesBool}}
+      {{#educationBool}}
+      <!-- EDUCATION -->
+      <div class="box">
+        <h2><i class="fa fa-university ico"></i> Education</h2>
+        <ul id="education" class="clearfix">
+          {{#education}}
+          <li>
+            <div class="year-start pull-left">{{startDateYear}}&nbsp;&nbsp;{{startDateMonthShort}}</div>
+            <div class="year pull-left">{{endDateYear}}&nbsp;&nbsp;{{endDateMonthShort}}</div>
+            <div class="description pull-right">
+              <h3>{{area}} ({{studyType}})</h3>
+              {{#institution}}
+              <p><i class= "fa-solid fa-graduation-cap ico"></i> {{institution}}</p>
+              <p><i class= "fa-solid fa-bullseye ico"></i> {{speciality}}</p>
+              <p>{{details}}<br><b>Speciality:</b> {{speciality}}</p>
+              {{/institution}}
+              {{#gpa}}
+              <p>
+                GPA: {{gpa}}
+              </p>
+              {{/gpa}}
+              {{#educationCourses}}
+              <ul class="list">
+                {{#courses}}
+                  <li><i class="fa-solid fa-book">&nbsp;</i>{{{.}}}</li>
+                {{/courses}}
+              </ul>
+              {{/educationCourses}}
+            </div>
+          </li>
+          {{/education}}
+        </ul>
+      </div>
+      {{/educationBool}}  
       {{#skillsBool}}
       <!-- SKILLS -->
       <div class="box">
@@ -366,6 +309,90 @@
         {{/skills}}
       </div>
       {{/skillsBool}}
+
+
+    {{#awardsBool}}
+    <!-- AWARDS -->
+    <div class="box">
+      <h2><i class="fa fa-certificate ico"></i> Awards</h2>
+      <ul id="awards" class="clearfix">
+        {{#awards}}
+        <li>
+          <div class="year pull-left">{{month}} {{year}}</div>
+          <div class="description pull-right">
+            <h3>{{awarder}}</h3>
+            <p><i class="fa fa-trophy ico"></i> {{title}}</p>
+            <p>{{{summary}}}</p>
+          </div>
+        </li>
+        {{/awards}}
+      </ul>
     </div>
+    {{/awardsBool}}
+    {{#volunteerBool}}
+    <!-- VOLUNTEER -->
+    <div class="box">
+      <h2><i class= "fa fa-group ico"></i> Volunteer</h2>
+      {{#volunteer}}
+        <div class="job clearfix">
+          <div class="row">
+            <div class="details">
+              <div class="where">{{organization}}</div>
+              {{#website}}
+              <div class="address">
+                <a href="{{website}}" target= "_blank"><i class="fa fa-globe ico"></i> {{website}}</a>
+              </div>
+              {{/website}}
+              <div class="year">{{startDateMonth}}{{startDateYear}} – {{endDateMonth}}{{endDateYear}}</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-11 pull-right">
+              <div class="profession">{{position}}</div>
+              <div class="description">
+                {{{summary}}}
+                {{#boolHighlights}}
+                <div class="highlights">Highlights</div>
+                <ul class="list-group">
+                  {{#highlights}}
+                  <li class="list-group-item">{{{.}}}</li>
+                  {{/highlights}}
+                </ul>
+                {{/boolHighlights}}
+              </div>
+            </div>
+          </div>
+        </div>
+      {{/volunteer}}
+    </div>
+    {{/volunteerBool}}
+    {{#publicationsBool}}
+    <!-- PUBLICATIONS -->
+    <div class="box">
+      <h2><i class="fa fa-book ico"></i> Publications</h2>
+      {{#publications}}
+      <div class="publication panel panel-default">
+        <div class="panel-heading">
+          <div class="name panel-title">{{name}}</div>
+        </div>
+        <div class="panel-body">
+          {{#publisher}}
+          <div class="publisher"><i class= "fa fa-bookmark ico"></i> {{publisher}}</div>
+          {{/publisher}}
+          <div class="year">{{day}} {{month}} {{year}}</div>
+          {{#website}}
+          <div class="address">
+            <a href="{{website}}" target= "_blank"><i class="fa fa-globe ico"></i> {{website}}</a>
+          </div>
+          {{/website}}
+          {{#summary}}
+          <p>{{{summary}}}</p>
+          {{/summary}}
+        </div>
+      </div>
+      {{/publications}}
+    </div>
+    {{/publicationsBool}}
+  </div>
   </body>
 </html>

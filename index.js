@@ -152,11 +152,12 @@ function render(resumeObject) {
             if (w.startDate) {
                 w.startDateYear = (w.startDate || "").substr(0,4);
                 w.startDateMonth = getMonth(w.startDate || "");
-
+                w.startDateMonthShort = getMonth(w.startDate || "").substr(0,3);
             }
             if(w.endDate) {
                 w.endDateYear = (w.endDate || "").substr(0,4);
                 w.endDateMonth = getMonth(w.endDate || "");
+                w.endDateMonthShort = getMonth(w.endDate || "").substr(0,3);
             } else {
                 w.endDateYear = 'Present'
             }
@@ -182,13 +183,14 @@ function render(resumeObject) {
                 if (e.startDate) {
                     e.startDateYear = e.startDate.substr(0,4);
                     e.startDateMonth = getMonth(e.startDate || "");
+                    e.startDateMonthShort = getMonth(e.startDate || "").substr(0,3);
                 } else {
                     e.endDateMonth = "";
                 }
                 if (e.endDate) {
                     e.endDateYear = e.endDate.substr(0,4);
                     e.endDateMonth = getMonth(e.endDate || "")
-
+                    e.endDateMonthShort = getMonth(e.endDate || "").substr(0,3);
                     if (e.endDateYear > curyear) {
                         e.endDateYear += " (expected)";
                     }
