@@ -380,6 +380,38 @@
     "url": "https://project.com/"
   }],
   "publications": [{
-    "name": "test"
+    "name": "A non existend publications",
+    "publisher": "Kindle",
+    "date": "2020-08-01",
+    "website": "https://mybook.com",
+    "summary": "An empty book with a lot of white pages"
+
+  }],
+  "awards": [
+    {
+      "title": "Non Award",
+      "date": "2019-08-01",
+      "awarder": "Mr. Nobody",
+      "summary": "An award for outstanding 'do nothing'"
+    },{
+      "title": "Digital Compression Pioneer Award",
+      "date": "2014-11-01",
+      "awarder": "Techcrunch",
+      "summary": "There is no spoon."
+  }],
+  "volunteer": [{
+    "name": "Collect Garbage in the street",
+    "organization": "Make volunteer things Inc.",
+    "website": "https://makevolunnteerthings.com",
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    "startDate": "1995-08-14",
+    "endDate": "2017-11-30",
+    "position": "Worker",
+    "highlights": [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+    ]
   }]
 }

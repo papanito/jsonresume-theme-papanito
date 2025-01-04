@@ -209,6 +209,17 @@ function render(resumeObject) {
         }
     }
 
+    if (resumeObject.projects && resumeObject.projects.length) {
+        if (resumeObject.projects[0].name) {
+            resumeObject.projectsBool = true;
+            _.each(resumeObject.projects, function(a){
+                a.year = (a.date || "").substr(0,4);
+                a.day = (a.date || "").substr(8,2);
+                a.month = getMonth(a.date || "");
+            });
+        }
+    }
+
     if (resumeObject.awards && resumeObject.awards.length) {
         if (resumeObject.awards[0].title) {
             resumeObject.awardsBool = true;

@@ -107,7 +107,7 @@
                   <h3>{{area}} ({{studyType}})</h3>
                   {{#institution}}
                   <p><i class= "fa fa-graduation-cap ico"></i> {{institution}}</p>
-                  <p>{{summary}}<br><b>Speciality:</b> {{speciality}}</p>
+                  <p>{{summary}}</p>
                   {{/institution}}
                 </div>
               </li>
@@ -270,7 +270,7 @@
               {{#institution}}
               <p><i class= "fa-solid fa-graduation-cap ico"></i> {{institution}}</p>
               <p><i class= "fa-solid fa-bullseye ico"></i> {{speciality}}</p>
-              <p>{{details}}<br><b>Speciality:</b> {{speciality}}</p>
+              <p>{{details}}</p>
               {{/institution}}
               {{#gpa}}
               <p>
@@ -310,89 +310,85 @@
       </div>
       {{/skillsBool}}
 
+      {{#volunteerBool}}
+      <!-- VOLUNTEER -->
+      <div class="box">
+        <h2><i class= "fa fa-group ico"></i> Volunteer</h2>
+        <ul id="volunteer" class="clearfix">
+          {{#volunteer}}
+          <li>
+            <div class="year-start pull-left">{{startDateYear}}&nbsp;&nbsp;{{startDateMonthShort}}</div>
+            <div class="year pull-left">{{endDateYear}}&nbsp;&nbsp;{{endDateMonthShort}}</div>
+            <div class="description pull-right">
+              <h3>{{name}}</h3>
+              <p><i class= "fa-solid fa-handshake-angle ico"></i> <a href='{{website}}'>{{organization}}</a></p>
+              <p>{{summary}}</p>
+              {{#boolHighlights}}
+              <ul class="list">
+                {{#highlights}}
+                <li><i class="fa-solid fa-trophy">&nbsp;</i>{{{.}}}</li>
+                {{/highlights}}
+              </ul>
+              {{/boolHighlights}}
+            </div>
+          </li>
+          {{/volunteer}}
+        </ul>
+      </div>
+      {{/volunteerBool}}
 
-    {{#awardsBool}}
-    <!-- AWARDS -->
-    <div class="box">
-      <h2><i class="fa fa-certificate ico"></i> Awards</h2>
-      <ul id="awards" class="clearfix">
-        {{#awards}}
-        <li>
-          <div class="year pull-left">{{month}} {{year}}</div>
-          <div class="description pull-right">
-            <h3>{{awarder}}</h3>
-            <p><i class="fa fa-trophy ico"></i> {{title}}</p>
-            <p>{{{summary}}}</p>
-          </div>
-        </li>
-        {{/awards}}
-      </ul>
-    </div>
-    {{/awardsBool}}
-    {{#volunteerBool}}
-    <!-- VOLUNTEER -->
-    <div class="box">
-      <h2><i class= "fa fa-group ico"></i> Volunteer</h2>
-      {{#volunteer}}
-        <div class="job clearfix">
-          <div class="row">
-            <div class="details">
-              <div class="where">{{organization}}</div>
-              {{#website}}
-              <div class="address">
-                <a href="{{website}}" target= "_blank"><i class="fa fa-globe ico"></i> {{website}}</a>
+      <div class="row">
+        <div class="col-sm">
+          {{#publicationsBool}}
+          <!-- PUBLICATIONS -->
+          <div class="box">
+            <h2><i class="fa fa-book ico"></i> Publications</h2>
+            {{#publications}}
+            <div class="publication panel panel-default">
+              <div class="panel-heading">
+                <div class="name panel-title">{{name}}</div>
               </div>
-              {{/website}}
-              <div class="year">{{startDateMonth}}{{startDateYear}} – {{endDateMonth}}{{endDateYear}}</div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-11 pull-right">
-              <div class="profession">{{position}}</div>
-              <div class="description">
-                {{{summary}}}
-                {{#boolHighlights}}
-                <div class="highlights">Highlights</div>
-                <ul class="list-group">
-                  {{#highlights}}
-                  <li class="list-group-item">{{{.}}}</li>
-                  {{/highlights}}
-                </ul>
-                {{/boolHighlights}}
+              <div class="panel-body">
+                {{#publisher}}
+                <div class="publisher"><i class= "fa fa-bookmark ico"></i> {{publisher}}</div>
+                {{/publisher}}
+                <div class="year">{{day}} {{month}} {{year}}</div>
+                {{#website}}
+                <div class="address">
+                  <a href="{{website}}" target= "_blank"><i class="fa fa-globe ico"></i> {{website}}</a>
+                </div>
+                {{/website}}
+                {{#summary}}
+                <p>{{{summary}}}</p>
+                {{/summary}}
               </div>
             </div>
+            {{/publications}}
           </div>
+          {{/publicationsBool}}
         </div>
-      {{/volunteer}}
-    </div>
-    {{/volunteerBool}}
-    {{#publicationsBool}}
-    <!-- PUBLICATIONS -->
-    <div class="box">
-      <h2><i class="fa fa-book ico"></i> Publications</h2>
-      {{#publications}}
-      <div class="publication panel panel-default">
-        <div class="panel-heading">
-          <div class="name panel-title">{{name}}</div>
+        <div class="col-sm">
+        {{#awardsBool}}
+        <!-- AWARDS -->
+        <div class="box">
+          <h2><i class="fa fa-certificate ico"></i> Awards</h2>
+          <ul id="awards" class="clearfix">
+            {{#awards}}
+            <li>
+              <div class="year pull-left">{{month}} {{year}}</div>
+              <div class="description pull-right">
+                <h3>{{awarder}}</h3>
+                <p><i class="fa fa-trophy ico"></i> {{title}}</p>
+                <p>{{{summary}}}</p>
+              </div>
+            </li>
+            {{/awards}}
+          </ul>
         </div>
-        <div class="panel-body">
-          {{#publisher}}
-          <div class="publisher"><i class= "fa fa-bookmark ico"></i> {{publisher}}</div>
-          {{/publisher}}
-          <div class="year">{{day}} {{month}} {{year}}</div>
-          {{#website}}
-          <div class="address">
-            <a href="{{website}}" target= "_blank"><i class="fa fa-globe ico"></i> {{website}}</a>
-          </div>
-          {{/website}}
-          {{#summary}}
-          <p>{{{summary}}}</p>
-          {{/summary}}
+        {{/awardsBool}}
         </div>
       </div>
-      {{/publications}}
+      </div>
     </div>
-    {{/publicationsBool}}
-  </div>
   </body>
 </html>

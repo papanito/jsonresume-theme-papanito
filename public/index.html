@@ -134,6 +134,7 @@ h4 {
 
 #awards,
 #education,
+#volunteer,
 #work {
   margin-bottom: 0;
   position: relative;
@@ -142,6 +143,7 @@ h4 {
 }
 
 #awards:before,
+#volunteer:before, 
 #education:before,
 #work:before {
   width: 5px;
@@ -162,6 +164,7 @@ h4 {
 }
 
 #awards li,
+#volunteer li,
 #education li,
 #work li{
   width: 100%;
@@ -173,6 +176,8 @@ h4 {
 #awards .year,
 #education .year,
 #education .year-start,
+#volunteer .year,
+#volunteer .year-start,
 #work .year-start,
 #work .year{
   width: 100px;
@@ -197,6 +202,7 @@ h4 {
   width: 75px;
 } */
 
+#volunteer .year-start,
 #education .year-start, 
 #work .year-start{
   position: absolute;
@@ -208,12 +214,14 @@ h4 {
   width: 85%;
 }
 
+#summary #volunteer .description, 
 #summary #education .description, 
 #summary #work .description{
   width: 85%;
 }
 
 #awards .description,
+#volunteer .description, 
 #education .description,
 #work .description{
   width: 92%;
@@ -224,6 +232,7 @@ h4 {
 
 #awards .description:after,
 #education .description:after,
+#volunteer .description:after,
 #work .description:after {
   content: '';
   position: absolute;
@@ -239,6 +248,7 @@ h4 {
 
 #awards .description h3,
 #education .description h3,
+#volunteer .description h3,
 #work .description h3{
   font-size: 1.2em;
   margin: 0;
@@ -248,6 +258,7 @@ h4 {
 
 #awards .description p,
 #education .description p,
+#volunteer .description p,
 #work .description p{
   margin-top: 3px;
   margin-bottom: 3px;
@@ -369,7 +380,7 @@ div#info .contact-item .icon>a{
   color: var(--main-color-secondary);
   padding: 1px 8px;
   font-size: .75em;
-  position: absolute;
+  position: relative;
   margin: 1px 10px;
 }
 
@@ -518,10 +529,10 @@ blockquote,
   margin: 0;
   margin-bottom: -20px;
 }
-#awards:before,
+/* #awards:before,
 #education:before {
   background: none;
-}
+} */
 
 .publication,
 .publication .panel-heading,
@@ -701,7 +712,7 @@ ul#work {
                 <div class="description pull-right">
                   <h3>Computer Science Engineer (Bachelor)</h3>
                   <p><i class= "fa fa-graduation-cap ico"></i> Bern University of Applied Sciences</p>
-                  <p>3 years of full time school and one year of internship between second and third year<br><b>Speciality:</b> Telematics, focus in security and network design</p>
+                  <p>3 years of full time school and one year of internship between second and third year</p>
                 </div>
               </li>
               <li>
@@ -710,7 +721,7 @@ ul#work {
                 <div class="description pull-right">
                   <h3>Electronic Technician (Apprenticeship (VET))</h3>
                   <p><i class= "fa fa-graduation-cap ico"></i> A non existing company</p>
-                  <p>Apprenticeship (VET) as an electronic technician in an armament factory of the Swiss Army.<br><b>Speciality:</b> </p>
+                  <p>Apprenticeship (VET) as an electronic technician in an armament factory of the Swiss Army.</p>
                 </div>
               </li>
             </ul>
@@ -1111,7 +1122,7 @@ ul#work {
               <h3>Computer Science Engineer (Bachelor)</h3>
               <p><i class= "fa-solid fa-graduation-cap ico"></i> Bern University of Applied Sciences</p>
               <p><i class= "fa-solid fa-bullseye ico"></i> Telematics, focus in security and network design</p>
-              <p>The tudy covers a various of different areas such as software development, software engineering, operating systems basics, telematics, computer network, web technologies, project management, natural science, mathematics, economics, IT-law, communication and languages.<br><b>Speciality:</b> Telematics, focus in security and network design</p>
+              <p>The tudy covers a various of different areas such as software development, software engineering, operating systems basics, telematics, computer network, web technologies, project management, natural science, mathematics, economics, IT-law, communication and languages.</p>
               <ul class="list">
                   <li><i class="fa-solid fa-book">&nbsp;</i>Software Engineering</li>
                   <li><i class="fa-solid fa-book">&nbsp;</i>Operating Systems</li>
@@ -1129,7 +1140,7 @@ ul#work {
               <h3>Electronic Technician (Apprenticeship (VET))</h3>
               <p><i class= "fa-solid fa-graduation-cap ico"></i> A non existing company</p>
               <p><i class= "fa-solid fa-bullseye ico"></i> </p>
-              <p>This is one of programs for one of the 230 different professions. In Switzerland, many professional qualifications are obtained in upper-secondary education, while in other countries the same qualifications are obtained in tertiary level education.<br><b>Speciality:</b> </p>
+              <p>This is one of programs for one of the 230 different professions. In Switzerland, many professional qualifications are obtained in upper-secondary education, while in other countries the same qualifications are obtained in tertiary level education.</p>
             </div>
           </li>
         </ul>
@@ -1212,19 +1223,74 @@ ul#work {
         </div>
       </div>
 
+      <!-- VOLUNTEER -->
+      <div class="box">
+        <h2><i class= "fa fa-group ico"></i> Volunteer</h2>
+        <ul id="volunteer" class="clearfix">
+          <li>
+            <div class="year-start pull-left">1995&nbsp;&nbsp;Aug</div>
+            <div class="year pull-left">2017&nbsp;&nbsp;Nov</div>
+            <div class="description pull-right">
+              <h3>Collect Garbage in the street</h3>
+              <p><i class= "fa-solid fa-handshake-angle ico"></i> <a href='https:&#x2F;&#x2F;makevolunnteerthings.com'>Make volunteer things Inc.</a></p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+              <ul class="list">
+                <li><i class="fa-solid fa-trophy">&nbsp;</i>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                <li><i class="fa-solid fa-trophy">&nbsp;</i>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                <li><i class="fa-solid fa-trophy">&nbsp;</i>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                <li><i class="fa-solid fa-trophy">&nbsp;</i>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
 
-    <!-- PUBLICATIONS -->
-    <div class="box">
-      <h2><i class="fa fa-book ico"></i> Publications</h2>
-      <div class="publication panel panel-default">
-        <div class="panel-heading">
-          <div class="name panel-title">test</div>
+      <div class="row">
+        <div class="col-sm">
+          <!-- PUBLICATIONS -->
+          <div class="box">
+            <h2><i class="fa fa-book ico"></i> Publications</h2>
+            <div class="publication panel panel-default">
+              <div class="panel-heading">
+                <div class="name panel-title">A non existend publications</div>
+              </div>
+              <div class="panel-body">
+                <div class="publisher"><i class= "fa fa-bookmark ico"></i> Kindle</div>
+                <div class="year">  </div>
+                <div class="address">
+                  <a href="https:&#x2F;&#x2F;mybook.com" target= "_blank"><i class="fa fa-globe ico"></i> https:&#x2F;&#x2F;mybook.com</a>
+                </div>
+                <p>An empty book with a lot of white pages</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="panel-body">
-          <div class="year">  </div>
+        <div class="col-sm">
+        <!-- AWARDS -->
+        <div class="box">
+          <h2><i class="fa fa-certificate ico"></i> Awards</h2>
+          <ul id="awards" class="clearfix">
+            <li>
+              <div class="year pull-left">August  2019</div>
+              <div class="description pull-right">
+                <h3>Mr. Nobody</h3>
+                <p><i class="fa fa-trophy ico"></i> Non Award</p>
+                <p>An award for outstanding 'do nothing'</p>
+              </div>
+            </li>
+            <li>
+              <div class="year pull-left">November  2014</div>
+              <div class="description pull-right">
+                <h3>Techcrunch</h3>
+                <p><i class="fa fa-trophy ico"></i> Digital Compression Pioneer Award</p>
+                <p>There is no spoon.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
         </div>
       </div>
+      </div>
     </div>
-  </div>
   </body>
 </html>

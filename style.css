@@ -123,6 +123,7 @@ h4 {
 
 #awards,
 #education,
+#volunteer,
 #work {
   margin-bottom: 0;
   position: relative;
@@ -131,6 +132,7 @@ h4 {
 }
 
 #awards:before,
+#volunteer:before, 
 #education:before,
 #work:before {
   width: 5px;
@@ -151,6 +153,7 @@ h4 {
 }
 
 #awards li,
+#volunteer li,
 #education li,
 #work li{
   width: 100%;
@@ -162,6 +165,8 @@ h4 {
 #awards .year,
 #education .year,
 #education .year-start,
+#volunteer .year,
+#volunteer .year-start,
 #work .year-start,
 #work .year{
   width: 100px;
@@ -186,6 +191,7 @@ h4 {
   width: 75px;
 } */
 
+#volunteer .year-start,
 #education .year-start, 
 #work .year-start{
   position: absolute;
@@ -197,12 +203,14 @@ h4 {
   width: 85%;
 }
 
+#summary #volunteer .description, 
 #summary #education .description, 
 #summary #work .description{
   width: 85%;
 }
 
 #awards .description,
+#volunteer .description, 
 #education .description,
 #work .description{
   width: 92%;
@@ -213,6 +221,7 @@ h4 {
 
 #awards .description:after,
 #education .description:after,
+#volunteer .description:after,
 #work .description:after {
   content: '';
   position: absolute;
@@ -228,6 +237,7 @@ h4 {
 
 #awards .description h3,
 #education .description h3,
+#volunteer .description h3,
 #work .description h3{
   font-size: 1.2em;
   margin: 0;
@@ -237,6 +247,7 @@ h4 {
 
 #awards .description p,
 #education .description p,
+#volunteer .description p,
 #work .description p{
   margin-top: 3px;
   margin-bottom: 3px;
@@ -358,7 +369,7 @@ div#info .contact-item .icon>a{
   color: var(--main-color-secondary);
   padding: 1px 8px;
   font-size: .75em;
-  position: absolute;
+  position: relative;
   margin: 1px 10px;
 }
 
