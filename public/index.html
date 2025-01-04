@@ -133,6 +133,7 @@ h4 {
 }
 
 #awards,
+#certificates,
 #education,
 #volunteer,
 #work {
@@ -143,6 +144,7 @@ h4 {
 }
 
 #awards:before,
+#certificates:before,
 #volunteer:before, 
 #education:before,
 #work:before {
@@ -164,6 +166,7 @@ h4 {
 }
 
 #awards li,
+#certificates li,
 #volunteer li,
 #education li,
 #work li{
@@ -174,6 +177,7 @@ h4 {
 }
 
 #awards .year,
+#certificates .year,
 #education .year,
 #education .year-start,
 #volunteer .year,
@@ -191,16 +195,18 @@ h4 {
   border-radius: 4px;
 }
 
+#awards .year,
+#certificates .year,
+#education .year,
 #work .year{
   position: absolute;
   top: 10px;
   left: 0;
 }
 
-/* #education .year,
-#education .year-start{
+#certificates .year{
   width: 75px;
-} */
+}
 
 #volunteer .year-start,
 #education .year-start, 
@@ -214,6 +220,7 @@ h4 {
   width: 85%;
 }
 
+#summary #certificates .description, 
 #summary #volunteer .description, 
 #summary #education .description, 
 #summary #work .description{
@@ -221,6 +228,7 @@ h4 {
 }
 
 #awards .description,
+#certificates .description,
 #volunteer .description, 
 #education .description,
 #work .description{
@@ -231,6 +239,7 @@ h4 {
 }
 
 #awards .description:after,
+#certificates .description:after,
 #education .description:after,
 #volunteer .description:after,
 #work .description:after {
@@ -247,6 +256,7 @@ h4 {
 }
 
 #awards .description h3,
+#certificates .description h3,
 #education .description h3,
 #volunteer .description h3,
 #work .description h3{
@@ -257,6 +267,7 @@ h4 {
 }
 
 #awards .description p,
+#certificates .description p,
 #education .description p,
 #volunteer .description p,
 #work .description p{
@@ -265,38 +276,6 @@ h4 {
   padding: 0;
 }
 
-.job{
-  margin-bottom: 15px;
-}
-.job .details {
-  margin-left: 3%;
-  width: 95%;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-.job .where{
-  font-size: 1.2em;
-  font-weight: bold;
-}
-.job .year{
-  opacity: 0.7;
-}
-.job .profession{
-  font-size: 1.2em;
-  font-weight: bold;
-}
-.job .description{
-  line-height: 1.5em;
-}
-.work .highlights{
-  padding: 5px 0;
-  font-weight: bold;
-
-}
-.job .job-details {
-  padding-left: 5%;
-  width: 100%;
-}
 .publication {
   margin-bottom: 0;
 }
@@ -438,6 +417,7 @@ ul.list>li {
 
 .pull-right {
   float: right;
+  padding-top: 0px;
 }
 
 div.contact {
@@ -770,6 +750,30 @@ ul#work {
               <li class=" list-group-item">English<span class="skill badge pull-right">Very Good</span></li>
             </ul>
           </div>
+
+          <!-- certificates -->
+          <div class="box">
+            <h2><i class="fa fa-certificate ico"></i> Certificates</h2>
+            <ul id="certificates" class="clearfix">
+              <li>
+                <div class="description pull-right">
+                  <h3>SAQ Certified Software Tester</h3>
+                  <p><i class="fa fa-building ico"></i>&nbsp;<a href='https:&#x2F;&#x2F;www.istqb.org&#x2F;'>ISTQB</a></p>
+                  <p>SAQ Certified Software Tester ISTQB - Foundation Level</p>
+                </div>
+                <div class="year pull-left">2007 Feb</div>
+              </li>
+              <li>
+                <div class="description pull-right">
+                  <h3>Project Leadership Program</h3>
+                  <p><i class="fa fa-building ico"></i>&nbsp;<a href='https:&#x2F;&#x2F;www.firma.com&#x2F;'>firma AG</a></p>
+                  <p>Company internal program</p>
+                </div>
+                <div class="year pull-left">2013 Feb</div>
+              </li>
+            </ul>
+          </div>
+
           <!-- HOBBIES -->
           <div class="box">
             <h2><i class="fa fa-heart ico"></i> Interests</h2>

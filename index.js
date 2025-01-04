@@ -209,6 +209,18 @@ function render(resumeObject) {
         }
     }
 
+    if (resumeObject.certificates && resumeObject.certificates.length) {
+        if (resumeObject.certificates[0].name) {
+            resumeObject.certificatesBool = true;
+            _.each(resumeObject.certificates, function(a){
+                a.year = (a.date || "").substr(0,4);
+                a.day = (a.date || "").substr(8,2);
+                a.month = getMonth(a.date || "");
+                a.monthShort = getMonth(a.date || "").substr(0,3);
+            });
+        }
+    }
+
     if (resumeObject.projects && resumeObject.projects.length) {
         if (resumeObject.projects[0].name) {
             resumeObject.projectsBool = true;

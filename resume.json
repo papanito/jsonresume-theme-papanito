@@ -257,15 +257,17 @@
     "details": "This is one of programs for one of the 230 different professions. In Switzerland, many professional qualifications are obtained in upper-secondary education, while in other countries the same qualifications are obtained in tertiary level education."
   }],
   "certificates": [{
-    "name": "SAQ Certified Software Tester ISTQB - Foundation Level",
+    "name": "SAQ Certified Software Tester",
     "date": "2007-02-27",
     "issuer": "ISTQB",
-    "url": "https://www.istqb.org/"
+    "url": "https://www.istqb.org/",
+    "summary": "SAQ Certified Software Tester ISTQB - Foundation Level"
   },{
     "name": "Project Leadership Program",
-    "date": "2007-02-27",
+    "date": "2013-02-27",
     "issuer": "firma AG",
-    "url": "https://www.firma.com/"
+    "url": "https://www.firma.com/",
+    "summary": "Company internal program"
   }],
   "skills": [{
     "name": "Container Platform",
