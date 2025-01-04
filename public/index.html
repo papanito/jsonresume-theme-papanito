@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resume of Max Mustermann</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" media='all'>
+    <script src="https://kit.fontawesome.com/30ebcf4eef.js" crossorigin="anonymous"></script>
+    <style type="text/css">
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
+@charset "utf-8";
+@-webkit-viewport   { width: device-width; }
+@-moz-viewport      { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
+
+/* hide elements on screen but print */
+@media only screen {
+  .hide {
+    display: none;
+  }
+}
+
+body{
+  --main-color-primary: cornflowerblue;
+  --main-color-secondary: white;
+  --main-color-third: #334960:
+  font-family: 'Open Sans', Arial, Tahoma;
+  font-weight: 400;
+  color: #363636;
+  background: var(--main-color-primary);
+  font-size: 0.95em;
+}
+
+blockquote {
+  font-size: 1em;
+}
+
+h4 {
+  color: var(--main-color-primary);
+  font-weight: 900;
+  font-size: 0.98em;
+  padding-top: 0.6em;
+}
+
+#info{
+  background: var(--main-color-primary);
+  color: var(--main-color-secondary);
+  margin-top: 5px;
+  padding: 10px;
+}
+
+#info a {
+  color: white;
+  text-decoration: none;
+}
+
+#summary{
+  margin-top: 80px;
+  background: var(--main-color-secondary);
+}
+
+#details{
+  margin-bottom: 15px;
+  background: var(--main-color-secondary);
+}
+
+#photo-header{
+  margin-top: -75px;
+}
+
+#photo{
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 5px;
+  background: var(--main-color-third);
+  display: inline-block;
+}
+
+#photo img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+#text-header h1{
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+#text-header h1::first-line{
+  font-size: 1.5em;
+  font-weight: 800;
+  line-height: 1.5em;
+}
+
+#text-header h1 span{
+  color: var(--main-color-third);
+  opacity: 0.7;
+}
+
+#text-header h1 sup{
+  opacity: 0.5;
+}
+
+#text-header:after{
+  width: 100%;
+  height: 3px;
+  margin-top: 15px;
+  content: '';
+  display: block;
+}
+
+.box{
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+.box h2{
+  color: var(--main-color-primary);
+  font-size: 1.5em;
+  font-weight: 700;
+  /* text-transform: uppercase; */
+}
+
+#awards,
+#education,
+#work {
+  margin-bottom: 0;
+  position: relative;
+  padding: 1em 0;
+  list-style: none;
+}
+
+#awards:before,
+#education:before,
+#work:before {
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  left: 35px;
+  top: 0;
+  content: ' ';
+  display: block;
+  background: #32475c;
+  background: -moz-linear-gradient(top,  var(--main-color-secondary) 0%, #32475c 7%, #32475c 89%, var(--main-color-secondary) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,var(--main-color-secondary)), color-stop(7%,#32475c), color-stop(89%,#32475c), color-stop(100%,var(--main-color-secondary)));
+  background: -webkit-linear-gradient(top,  var(--main-color-secondary) 0%,#32475c 7%,#32475c 89%,var(--main-color-secondary) 100%);
+  background: -o-linear-gradient(top,  var(--main-color-secondary) 0%,#32475c 7%,#32475c 89%,var(--main-color-secondary) 100%);
+  background: -ms-linear-gradient(top,  var(--main-color-secondary) 0%,#32475c 7%,#32475c 89%,var(--main-color-secondary) 100%);
+  background: linear-gradient(to bottom,  var(--main-color-secondary) 0%,#32475c 7%,#32475c 89%,var(--main-color-secondary) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--main-color-secondary)', endColorstr='var(--main-color-secondary)',GradientType=0 );
+}
+
+#awards li,
+#education li,
+#work li{
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  float: left;
+}
+
+#awards .year,
+#education .year,
+#education .year-start,
+#work .year-start,
+#work .year{
+  width: 100px;
+  background: var(--main-color-primary);
+  color: var(--main-color-secondary);
+  text-align: center;
+  padding: 3px;
+  font-weight: 700;
+  font-size: 0.7em;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+#work .year{
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+/* #education .year,
+#education .year-start{
+  width: 75px;
+} */
+
+#education .year-start, 
+#work .year-start{
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+}
+
+#summary #awards .description{
+  width: 85%;
+}
+
+#summary #education .description, 
+#summary #work .description{
+  width: 85%;
+}
+
+#awards .description,
+#education .description,
+#work .description{
+  width: 92%;
+  display: inline-block;
+  position: relative;
+  padding: 10px;
+}
+
+#awards .description:after,
+#education .description:after,
+#work .description:after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  right: 0;
+  left: -16px;
+  height: 0;
+  width: 0;
+  border: solid transparent;
+  border-width: 8px;
+  pointer-events: none;
+}
+
+#awards .description h3,
+#education .description h3,
+#work .description h3{
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+}
+
+#awards .description p,
+#education .description p,
+#work .description p{
+  margin-top: 3px;
+  margin-bottom: 3px;
+  padding: 0;
+}
+
+.job{
+  margin-bottom: 15px;
+}
+.job .details {
+  margin-left: 3%;
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.job .where{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.job .year{
+  opacity: 0.7;
+}
+.job .profession{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.job .description{
+  line-height: 1.5em;
+}
+.work .highlights{
+  padding: 5px 0;
+  font-weight: bold;
+
+}
+.job .job-details {
+  padding-left: 5%;
+  width: 100%;
+}
+.publication {
+  margin-bottom: 0;
+}
+.publication .name{
+  font-size: 1em;
+  font-weight: bold;
+}
+.publication .year{
+  opacity: 0.7;
+}
+.publication p{
+  margin: 0;
+  padding-top: 10px;
+}
+.contact-item{
+  width: 100%;
+  float: left;
+}
+.contact-item .icon{
+  padding: 5px;
+  border-right: 1px solid var(--main-color-secondary);
+  border-bottom: 1px solid var(--main-color-secondary);
+  color: #32475c;
+  background: var(--main-color-secondary);
+}
+
+div#info .contact-item .icon{
+  background: var(--main-color-primary);
+  color: var(--main-color-secondary);
+  border-right: 0px solid;
+  border-bottom: opx solid;
+  text-size-adjust: 5px;
+}
+div#info .contact-item .icon>a{
+  background: var(--main-color-secondary);
+}
+.contact-item:last-child .icon{
+  border-bottom: none;
+}
+.contact-item .title{
+  width: 80%;
+  width: calc(100% - 55px);
+  font-weight: 700;
+  opacity: 0.9;
+}
+.contact-item .title.only{
+  margin-top: 5px;
+}
+.contact-item .description{
+  width: 80%;
+  width: calc(100% - 55px);
+  color: var(--main-color-third);
+}
+
+.item-interests,
+.item-skills{
+  height: 30px;
+  color: var(--main-color-third);
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.interest,
+.skill{
+  color: var(--main-color-secondary);
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 5px 10px;
+  background: #32475c;
+  position: relative;
+  font-size: .85em;
+}
+.skill-level {
+  background-color: #227c74;
+  border-radius: 4px;
+  color: var(--main-color-secondary);
+  padding: 1px 8px;
+  font-size: .75em;
+  position: absolute;
+  margin: 1px 10px;
+}
+
+#language-skills .skill{
+  margin: 10px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.list {
+  margin-left: 0px;
+  padding-left: 0px;
+  font-family: 'Open Sans', Arial, Tahoma;
+  font-weight: 400;
+  font-size: 0.95em;
+}
+
+ul.list>li {
+  display: block;
+  padding-left: 1em;
+  text-indent: -0.6em;
+}
+
+.list-item {
+  display: inline-block;
+  position: relative;
+  padding: .75rem 1.0rem;
+  margin-bottom: -1px;
+}
+
+.list-group-item {
+  padding: var(--bs-list-group-item-padding-y) var(--bs-list-group-item-padding-x);
+  border: none;
+}
+
+.list-item p, .list p, .list-item div {
+  vertical-align: top;
+  margin-bottom: 0%;
+  font-family: 'Open Sans', Arial, Tahoma;
+}
+
+.fa, .fa-brands, .fa-regular, .fa-solid, .fab, .far, .fas {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: var(--fa-display,inline-block);
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+div.contact {
+  margin-bottom: 0.5em;
+}
+
+div.quote {
+  padding-top: 0.5em;
+  font-style: italic;
+}
+
+.interests .col-sm-12 {
+  padding-left: 10px;
+}
+    </style>
+    <style type="text/css" media="print">
+    @page {
+  size: 21cm 29.7cm;
+  margin: 1rem;
+}
+
+body {
+  font-size: .85em;
+  -webkit-print-color-adjust: exact;
+  /* --bs-border-radius: 2px; */
+  background: white;
+}
+
+.text-header h1,
+.box h2,
+#awards .description h3,
+#education .description h3,
+#work .description h3{
+  font-size: 1.0em;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+}
+
+
+p {
+  margin-bottom: 0.2rem;
+}
+
+a[href]:after {
+  content: none !important;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+}
+
+#photo{
+  display: none;
+}
+
+.box {
+  margin-bottom: -10px;
+}
+
+blockquote,
+#education,
+#awards,
+.contact-item,
+.publication,
+.skills,
+.interests {
+  page-break-inside: avoid;
+}
+
+.col-sm-5{
+  width: 40%;
+  padding: 0 15px;
+}
+
+.col-sm-7{
+  width: 60%;
+  padding: 0 15px;
+}
+
+.skills .col-sm-offset-1,
+.interests .col-sm-offset-1{
+  margin-top: -10px;
+  margin-bottom: 5px;
+}
+
+#education {
+  margin: 0;
+  margin-bottom: -20px;
+}
+#awards:before,
+#education:before {
+  background: none;
+}
+
+.publication,
+.publication .panel-heading,
+.publication .name{
+  margin: 0;
+  padding: 0 5px;
+  border: none;
+}
+.publication .panel-body {
+  padding: 0 10px;
+  margin: 0;
+}
+ul#work {
+  padding-top: 0px;
+}
+.badge {
+  margin: 2px;
+  font-size: 0.8em;
+  /* --bs-badge-border-radius: var(--bs-border-radius); */
+}
+
+.list-group-item{
+  border: none;
+  margin: 0;
+  padding: 5px 15px;
+}
+
+.list-group-item:after{
+  content: '';
+  position: absolute;
+  top: 8px;
+  right: 0;
+  left: -1px;
+  height: 0;
+  width: 0;
+  border: solid transparent;
+  border-right-color: #999;
+  border-width: 4px;
+  pointer-events: none;
+ }
+
+ /* .pull-right {
+  margin-top: 30px;
+  margin-bottom: 30px;
+ } */
+
+#awards .year,
+#work .year-start,
+#work .year{
+  width: 60px;
+}
+
+#info,
+#education list {
+  display: none;
+}
+
+#education .year,
+#education .year-start{
+  width: 60px;
+}
+
+
+#details{
+  page-break-before: always;
+}
+
+/* #work li{
+  page-break-before: auto;
+} */
+
+.§contact-item .icon,
+.contact-item .title.only {
+  margin-top: 0px;
+  padding: 0px;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container" id="summary">
+      <div class="row">
+        <div class="col-sm">
+          <div id="photo-header" class="text-center">
+            <!-- PHOTO (AVATAR) -->
+            <div id="photo">
+              <img src="&#x2F;&#x2F;www.gravatar.com&#x2F;avatar&#x2F;8ddf33397aeb3ede8b70e5acc93ef1ee?s&#x3D;200&amp;r&#x3D;pg&amp;d&#x3D;mm" alt="avatar">
+            </div>
+            <div id="text-header" >
+              <h1>Max Mustermann<br><span>Leading Automation Engineer and DevOps Advocate</span></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row contact">
+        <div class="col-sm" id="info">
+          <div class="contact-item">
+            <div class="icon pull-left text-right"><span class="fa fa-envelope fa-fw"></span></div>
+            <div class="title only pull-right"><a href="mailto:example@gmailcom" target="_blank">example@gmailcom</a></div>
+          </div>
+        </div>
+        <div class="col-sm" id="info">
+          <div class="contact-item">
+            <div class="icon pull-left text-right"><span class="fa fa-globe fa-fw"></span></div>
+            <div class="title only pull-right"><a href="https:&#x2F;&#x2F;myblog.com" target="_blank">https:&#x2F;&#x2F;myblog.com</a></div>
+          </div>
+        </div>
+        <div class="col-sm" id="info">
+          <div class="contact-item">
+            <div class="icon pull-left text-right"><span class="fa fa-phone fa-fw"></span></div>
+            <div class="title only">+41 (0)11 123 12 12</div>
+          </div>
+        </div>
+        <div class="col-sm" id="info">
+          <div class="contact-item">
+            <div class="icon pull-left text-right"><span class="fa fa-map-marker fa-fw"></span></div>
+            <div class="title only">Hier, Kantönli</div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-7">
+          <!-- ABOUT ME -->
+          <div class="box">
+            <h2><i class="fa fa-user ico"></i> About</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <!-- WORK EXPERIENCE -->
+          <div class="box">
+            <h2><i class= "fa fa-suitcase ico"></i> Work Experience</h2>
+            <ul id="work" class="clearfix">
+              <li>
+                <div class="description pull-right">
+                  <h3>Chapter Lead Platform Engineering</h3>
+                  <p><i class="fa-solid fa-building ico">&nbsp;</i>Company GmbH Wherever, Switzerland</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="year-start pull-left">2024&nbsp;&nbsp;Apr</div>
+                <div class="year pull-left">Present&nbsp;&nbsp;</div>
+              </li>
+              <li>
+                <div class="description pull-right">
+                  <h3>Senior Development Engineer (Cloud Team)</h3>
+                  <p><i class="fa-solid fa-building ico">&nbsp;</i>Company GmbH Wherever, Switzerland</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="year-start pull-left">2022&nbsp;&nbsp;Jan</div>
+                <div class="year pull-left">2024&nbsp;&nbsp;Mar</div>
+              </li>
+              <li>
+                <div class="description pull-right">
+                  <h3>Senior Development Engineer (CI&#x2F;CD)</h3>
+                  <p><i class="fa-solid fa-building ico">&nbsp;</i>Company GmbH Wherever, Switzerland</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="year-start pull-left">2017&nbsp;&nbsp;Dec</div>
+                <div class="year pull-left">2021&nbsp;&nbsp;Dec</div>
+              </li>
+              <li>
+                <div class="description pull-right">
+                  <h3>Lead DevOps Workgroup</h3>
+                  <p><i class="fa-solid fa-building ico">&nbsp;</i>Another Company Somewhere, Switzerland</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="year-start pull-left">2016&nbsp;&nbsp;Sep</div>
+                <div class="year pull-left">2017&nbsp;&nbsp;Nov</div>
+              </li>
+            </ul>
+          </div>
+          <!-- EDUCATION -->
+          <div class="box">
+            <h2><i class="fa fa-university ico"></i> Education</h2>
+            <ul id="education" class="clearfix">
+              <li>
+                <div class="year-start pull-left">2000&nbsp;&nbsp;Aug</div>
+                <div class="year pull-left">2004&nbsp;&nbsp;Jan</div>
+                <div class="description pull-right">
+                  <h3>Computer Science Engineer (Bachelor)</h3>
+                  <p><i class= "fa fa-graduation-cap ico"></i> Bern University of Applied Sciences</p>
+                  <p>3 years of full time school and one year of internship between second and third year<br><b>Speciality:</b> Telematics, focus in security and network design</p>
+                </div>
+              </li>
+              <li>
+                <div class="year-start pull-left">1995&nbsp;&nbsp;Aug</div>
+                <div class="year pull-left">1999&nbsp;&nbsp;Jul</div>
+                <div class="description pull-right">
+                  <h3>Electronic Technician (Apprenticeship (VET))</h3>
+                  <p><i class= "fa fa-graduation-cap ico"></i> A non existing company</p>
+                  <p>Apprenticeship (VET) as an electronic technician in an armament factory of the Swiss Army.<br><b>Speciality:</b> </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="col-xs-12 col-sm-5">
+          <!-- CONTACT -->
+          <div class="box clearfix">
+            <h2><i class="fa-solid fa-address-card ico"></i> Contact</h2>
+            <div class="contact-item hide">
+              <div class="icon pull-left text-center"><span class="fa fa-map-marker fa-fw"></span></div>
+              <div class="title only pull-right">Hier, Kantönli 1111 CH</div>
+            </div>
+            <div class="contact-item hide">
+              <div class="icon pull-left text-center"><span class="fa fa-phone fa-fw"></span></div>
+              <div class="title only pull-right">+41 (0)11 123 12 12</div>
+            </div>
+            <div class="contact-item hide">
+              <div class="icon pull-left text-center"><span class="fa fa-envelope fa-fw"></span></div>
+              <div class="title only pull-right"><a href="mailto:example@gmailcom" target="_blank">example@gmailcom</a></div>
+            </div>
+            <div class="contact-item hide">
+              <div class="icon pull-left text-center"><span class="fa fa-globe fa-fw"></span></div>
+              <div class="title only pull-right"><a href="https:&#x2F;&#x2F;myblog.com" target="_blank">https:&#x2F;&#x2F;myblog.com</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-github fa-fw"></span></div>
+              <div class="title only pull-right"><a href="https:&#x2F;&#x2F;github.com&#x2F;example" target="_blank">example</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-gitlab fa-fw"></span></div>
+              <div class="title only pull-right"><a href="https:&#x2F;&#x2F;gitlab.com&#x2F;example" target="_blank">example</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-stack-overflow fa-fw"></span></div>
+              <div class="title only pull-right"><a href="https:&#x2F;&#x2F;stackoverflow.com&#x2F;users&#x2F;111111" target="_blank">example</a></div>
+            </div>
+          </div>
+          <!-- LANGUAGES -->
+          <div class="box">
+            <h2><i class="fa fa-language ico"></i> Languages</h2>
+            <ul class="list-group">
+              <li class=" list-group-item">German<span class="skill badge pull-right">Native speaker</span></li>
+              <li class=" list-group-item">Spanish<span class="skill badge pull-right">Very Good</span></li>
+              <li class=" list-group-item">English<span class="skill badge pull-right">Very Good</span></li>
+            </ul>
+          </div>
+          <!-- HOBBIES -->
+          <div class="box">
+            <h2><i class="fa fa-heart ico"></i> Interests</h2>
+            <div class="interests clearfix">
+              <div class="item-interests">
+                  Family
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class= "interest badge">5 children</span>
+                <span class= "interest badge">Dogs</span>
+              </div>
+            </div>
+            <div class="interests clearfix">
+              <div class="item-interests">
+                  Sports
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class= "interest badge">Boxing</span>
+                <span class= "interest badge">Kickboxing</span>
+                <span class= "interest badge">Inline Skates</span>
+              </div>
+            </div>
+            <div class="interests clearfix">
+              <div class="item-interests">
+                  IT and Cybersecurity
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class= "interest badge">Ansible</span>
+                <span class= "interest badge">Terraform</span>
+                <span class= "interest badge">Security</span>
+                <span class= "interest badge">Hetzner</span>
+                <span class= "interest badge">Linux</span>
+                <span class= "interest badge">NixOS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="details">
+      <!-- WORK EXPERIENCE -->
+      <div class="box">
+        <h2><i class= "fa fa-suitcase ico"></i> Work Experience Details</h2>
+        <ul id="work" class="clearfix">
+          <li>
+            <div class="description pull-right">
+              <h3>Chapter Lead Platform Engineering</h3>
+              <p><i class="fa fa-building"></i> Company GmbH</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <div>
+                <div class="row">
+                  <div class="col-8">
+                    <div class="highlights"><h4>Tasks</h4></div>
+                    <ul class="list">
+                      <li><i class="fa-solid fa-clipboard"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                      <li><i class="fa-solid fa-clipboard"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                      <li><i class="fa-solid fa-clipboard"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                      <li><i class="fa-solid fa-clipboard"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                      <li><i class="fa-solid fa-clipboard"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                      <li><i class="fa-solid fa-clipboard"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm">
+                    <div class="highlights"><h4>Tech Stack</h4></div>
+                    <ul class="list">
+                      <li><i class="fa-solid fa-gear"></i> Tool 1</li>
+                      <li><i class="fa-solid fa-gear"></i> Tool 2</li>
+                      <li><i class="fa-solid fa-gear"></i> Tool 3</li>
+                      <li><i class="fa-solid fa-gear"></i> Tool 4</li>
+                      <li><i class="fa-solid fa-gear"></i> Tool 5</li>
+                      <li><i class="fa-solid fa-gear"></i> Tool 6</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm">
+                  <div class="highlights"><h4>Achievements</h4></div>
+                  <ul class="list">
+                    <li><i class="fa-solid fa-trophy">&nbsp;</i>Achievement 1</li>
+                    <li><i class="fa-solid fa-trophy">&nbsp;</i>Achievement 2</li>
+                    <li><i class="fa-solid fa-trophy">&nbsp;</i>Achievement 3</li>
+                    <li><i class="fa-solid fa-trophy">&nbsp;</i>Achievement 4</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="year-start pull-left">2024&nbsp;&nbsp;Apr</div>
+            <div class="year pull-left">Present&nbsp;&nbsp;</div>
+          </li>
+          <li>
+            <div class="description pull-right">
+              <h3>Senior Development Engineer (Cloud Team)</h3>
+              <p><i class="fa fa-building"></i> Company GmbH</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <div>
+                <div class="row">
+                  <div class="col-8">
+                    <div class="highlights"><h4>Tasks</h4></div>
+                    <ul class="list">
+                      <li><i class="fa-solid fa-clipboard"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                      <li><i class="fa-solid fa-clipboard"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                      <li><i class="fa-solid fa-clipboard"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                      <li><i class="fa-solid fa-clipboard"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                      <li><i class="fa-solid fa-clipboard"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                      <li><i class="fa-solid fa-clipboard"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm">
+                    <div class="highlights"><h4>Tech Stack</h4></div>
+                    <ul class="list">
+                      <li><i class="fa-solid fa-gear"></i> Tool 1</li>
+                      <li><i class="fa-solid fa-gear"></i> Tool 2</li>
+                      <li><i class="fa-solid fa-gear"></i> Tool 3</li>
+                      <li><i class="fa-solid fa-gear"></i> Tool 4</li>
+                      <li><i class="fa-solid fa-gear"></i> Tool 5</li>
+                      <li><i class="fa-solid fa-gear"></i> Tool 6</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm">
+                  <div class="highlights"><h4>Achievements</h4></div>
+                  <ul class="list">
+                    <li><i class="fa-solid fa-trophy">&nbsp;</i>Achievement 1</li>
+                    <li><i class="fa-solid fa-trophy">&nbsp;</i>Achievement 2</li>
+                    <li><i class="fa-solid fa-trophy">&nbsp;</i>Achievement 3</li>
+                    <li><i class="fa-solid fa-trophy">&nbsp;</i>Achievement 4</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="year-start pull-left">2022&nbsp;&nbsp;Jan</div>
+            <div class="year pull-left">2024&nbsp;&nbsp;Mar</div>
+          </li>
+          <li>
+            <div class="description pull-right">
+              <h3>Senior Development Engineer (CI&#x2F;CD)</h3>
+              <p><i class="fa fa-building"></i> Company GmbH</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <div>
+                <div class="row">
+                  <div class="col-8">
+                    <div class="highlights"><h4>Tasks</h4></div>
+                    <ul class="list">
+                      <li><i class="fa-solid fa-clipboard"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                      <li><i class="fa-solid fa-clipboard"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                      <li><i class="fa-solid fa-clipboard"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                      <li><i class="fa-solid fa-clipboard"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                      <li><i class="fa-solid fa-clipboard"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                      <li><i class="fa-solid fa-clipboard"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm">
+                    <div class="highlights"><h4>Tech Stack</h4></div>
+                    <ul class="list">
+                      <li><i class="fa-solid fa-gear"></i> Tool 1</li>
+                      <li><i class="fa-solid fa-gear"></i> Tool 2</li>
+                      <li><i class="fa-solid fa-gear"></i> Tool 3</li>
+                      <li><i class="fa-solid fa-gear"></i> Tool 4</li>
+                      <li><i class="fa-solid fa-gear"></i> Tool 5</li>
+                      <li><i class="fa-solid fa-gear"></i> Tool 6</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm">
+                  <div class="highlights"><h4>Achievements</h4></div>
+                  <ul class="list">
+                    <li><i class="fa-solid fa-trophy">&nbsp;</i>Achievement 1</li>
+                    <li><i class="fa-solid fa-trophy">&nbsp;</i>Achievement 2</li>
+                    <li><i class="fa-solid fa-trophy">&nbsp;</i>Achievement 3</li>
+                    <li><i class="fa-solid fa-trophy">&nbsp;</i>Achievement 4</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="year-start pull-left">2017&nbsp;&nbsp;Dec</div>
+            <div class="year pull-left">2021&nbsp;&nbsp;Dec</div>
+          </li>
+          <li>
+            <div class="description pull-right">
+              <h3>Lead DevOps Workgroup</h3>
+              <p><i class="fa fa-building"></i> Another Company</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <div>
+                <div class="row">
+                  <div class="col-8">
+                    <div class="highlights"><h4>Tasks</h4></div>
+                    <ul class="list">
+                      <li><i class="fa-solid fa-clipboard"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                      <li><i class="fa-solid fa-clipboard"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                      <li><i class="fa-solid fa-clipboard"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                      <li><i class="fa-solid fa-clipboard"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                      <li><i class="fa-solid fa-clipboard"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                      <li><i class="fa-solid fa-clipboard"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm">
+                    <div class="highlights"><h4>Tech Stack</h4></div>
+                    <ul class="list">
+                      <li><i class="fa-solid fa-gear"></i> Tool 1</li>
+                      <li><i class="fa-solid fa-gear"></i> Tool 2</li>
+                      <li><i class="fa-solid fa-gear"></i> Tool 3</li>
+                      <li><i class="fa-solid fa-gear"></i> Tool 4</li>
+                      <li><i class="fa-solid fa-gear"></i> Tool 5</li>
+                      <li><i class="fa-solid fa-gear"></i> Tool 6</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm">
+                  <div class="highlights"><h4>Achievements</h4></div>
+                  <ul class="list">
+                    <li><i class="fa-solid fa-trophy">&nbsp;</i>Achievement 1</li>
+                    <li><i class="fa-solid fa-trophy">&nbsp;</i>Achievement 2</li>
+                    <li><i class="fa-solid fa-trophy">&nbsp;</i>Achievement 3</li>
+                    <li><i class="fa-solid fa-trophy">&nbsp;</i>Achievement 4</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="year-start pull-left">2016&nbsp;&nbsp;Sep</div>
+            <div class="year pull-left">2017&nbsp;&nbsp;Nov</div>
+          </li>
+          <li>
+            <div class="description pull-right">
+              <h3>SW Testing Discipline Lead</h3>
+              <p><i class="fa fa-building"></i> Another Company</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <div>
+                <div class="row">
+                  <div class="col-8">
+                    <div class="highlights"><h4>Tasks</h4></div>
+                    <ul class="list">
+                      <li><i class="fa-solid fa-clipboard"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                      <li><i class="fa-solid fa-clipboard"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                      <li><i class="fa-solid fa-clipboard"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                      <li><i class="fa-solid fa-clipboard"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                      <li><i class="fa-solid fa-clipboard"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                      <li><i class="fa-solid fa-clipboard"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm">
+                    <div class="highlights"><h4>Tech Stack</h4></div>
+                    <ul class="list">
+                      <li><i class="fa-solid fa-gear"></i> Tool 1</li>
+                      <li><i class="fa-solid fa-gear"></i> Tool 2</li>
+                      <li><i class="fa-solid fa-gear"></i> Tool 3</li>
+                      <li><i class="fa-solid fa-gear"></i> Tool 4</li>
+                      <li><i class="fa-solid fa-gear"></i> Tool 5</li>
+                      <li><i class="fa-solid fa-gear"></i> Tool 6</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm">
+                  <div class="highlights"><h4>Achievements</h4></div>
+                  <ul class="list">
+                    <li><i class="fa-solid fa-trophy">&nbsp;</i>Achievement 1</li>
+                    <li><i class="fa-solid fa-trophy">&nbsp;</i>Achievement 2</li>
+                    <li><i class="fa-solid fa-trophy">&nbsp;</i>Achievement 3</li>
+                    <li><i class="fa-solid fa-trophy">&nbsp;</i>Achievement 4</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="year-start pull-left">2016&nbsp;&nbsp;Jan</div>
+            <div class="year pull-left">2016&nbsp;&nbsp;Aug</div>
+          </li>
+          <li>
+            <div class="description pull-right">
+              <h3>test</h3>
+              <p><i class="fa fa-building"></i> Another Company, Switzerland</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <div>
+                <div class="row">
+                  <div class="col-8">
+                    <div class="highlights"><h4>Tasks</h4></div>
+                    <ul class="list">
+                      <li><i class="fa-solid fa-clipboard"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                      <li><i class="fa-solid fa-clipboard"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                      <li><i class="fa-solid fa-clipboard"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                      <li><i class="fa-solid fa-clipboard"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                      <li><i class="fa-solid fa-clipboard"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                      <li><i class="fa-solid fa-clipboard"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm">
+                    <div class="highlights"><h4>Tech Stack</h4></div>
+                    <ul class="list">
+                      <li><i class="fa-solid fa-gear"></i> Tool 1</li>
+                      <li><i class="fa-solid fa-gear"></i> Tool 2</li>
+                      <li><i class="fa-solid fa-gear"></i> Tool 3</li>
+                      <li><i class="fa-solid fa-gear"></i> Tool 4</li>
+                      <li><i class="fa-solid fa-gear"></i> Tool 5</li>
+                      <li><i class="fa-solid fa-gear"></i> Tool 6</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm">
+                  <div class="highlights"><h4>Achievements</h4></div>
+                  <ul class="list">
+                    <li><i class="fa-solid fa-trophy">&nbsp;</i>Achievement 1</li>
+                    <li><i class="fa-solid fa-trophy">&nbsp;</i>Achievement 2</li>
+                    <li><i class="fa-solid fa-trophy">&nbsp;</i>Achievement 3</li>
+                    <li><i class="fa-solid fa-trophy">&nbsp;</i>Achievement 4</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="year-start pull-left">2016&nbsp;&nbsp;Sep</div>
+            <div class="year pull-left">2017&nbsp;&nbsp;Nov</div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h2><i class= "fa fa-check-square ico"></i> References</h2>
+        <blockquote>
+          <footer>
+            <div><b><i class="fa-solid fa-trophy">&nbsp;</i>Reward</b>&nbsp;2019-11-14, <a href="" target= "_blank"> Max M.</a>&nbsp;(ART Train Lead at Company GmbH)</div>
+          </footer>
+
+          <div class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+        </blockquote><br>
+        <blockquote>
+          <footer>
+            <div><b><i class="fa-solid fa-comment">&nbsp;</i>Feedback</b>&nbsp;2020-11-24, <a href="" target= "_blank"> Tom R.</a>&nbsp;(PO and PM at Company GmbH)</div>
+          </footer>
+
+          <div class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+        </blockquote><br>
+      </div>
+      <!-- EDUCATION -->
+      <div class="box">
+        <h2><i class="fa fa-university ico"></i> Education</h2>
+        <ul id="education" class="clearfix">
+          <li>
+            <div class="year-start pull-left">2000&nbsp;&nbsp;Aug</div>
+            <div class="year pull-left">2004&nbsp;&nbsp;Jan</div>
+            <div class="description pull-right">
+              <h3>Computer Science Engineer (Bachelor)</h3>
+              <p><i class= "fa-solid fa-graduation-cap ico"></i> Bern University of Applied Sciences</p>
+              <p><i class= "fa-solid fa-bullseye ico"></i> Telematics, focus in security and network design</p>
+              <p>The tudy covers a various of different areas such as software development, software engineering, operating systems basics, telematics, computer network, web technologies, project management, natural science, mathematics, economics, IT-law, communication and languages.<br><b>Speciality:</b> Telematics, focus in security and network design</p>
+              <ul class="list">
+                  <li><i class="fa-solid fa-book">&nbsp;</i>Software Engineering</li>
+                  <li><i class="fa-solid fa-book">&nbsp;</i>Operating Systems</li>
+                  <li><i class="fa-solid fa-book">&nbsp;</i>Telematics and network technologies</li>
+                  <li><i class="fa-solid fa-book">&nbsp;</i>Project Management</li>
+                  <li><i class="fa-solid fa-book">&nbsp;</i>Mathematics</li>
+                  <li><i class="fa-solid fa-book">&nbsp;</i>Economics</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="year-start pull-left">1995&nbsp;&nbsp;Aug</div>
+            <div class="year pull-left">1999&nbsp;&nbsp;Jul</div>
+            <div class="description pull-right">
+              <h3>Electronic Technician (Apprenticeship (VET))</h3>
+              <p><i class= "fa-solid fa-graduation-cap ico"></i> A non existing company</p>
+              <p><i class= "fa-solid fa-bullseye ico"></i> </p>
+              <p>This is one of programs for one of the 230 different professions. In Switzerland, many professional qualifications are obtained in upper-secondary education, while in other countries the same qualifications are obtained in tertiary level education.<br><b>Speciality:</b> </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- SKILLS -->
+      <div class="box">
+        <h2><i class="fa fa-tasks ico"></i> Skills</h2>
+        <div class="skills clearfix">
+          <div class="item-skills">
+              Container Platform
+              <span class="skill-level">Expert</span>
+          </div>
+          <div class="col-sm-offset-1 col-sm-12 clearfix">
+            <span class= "skill badge">Kubernetes</span>
+            <span class= "skill badge">Rancher</span>
+            <span class= "skill badge">Kyverno</span>
+          </div>
+        </div>
+        <div class="skills clearfix">
+          <div class="item-skills">
+              Infrastructure as Code
+              <span class="skill-level">Expert</span>
+          </div>
+          <div class="col-sm-offset-1 col-sm-12 clearfix">
+            <span class= "skill badge">Terraform</span>
+            <span class= "skill badge">Ansible</span>
+            <span class= "skill badge">Bash</span>
+            <span class= "skill badge">Packer</span>
+            <span class= "skill badge">Vagrant</span>
+          </div>
+        </div>
+        <div class="skills clearfix">
+          <div class="item-skills">
+              SDLC
+              <span class="skill-level">Expert</span>
+          </div>
+          <div class="col-sm-offset-1 col-sm-12 clearfix">
+            <span class= "skill badge">CI/CD</span>
+            <span class= "skill badge">Software Testing</span>
+            <span class= "skill badge">ArgoCD</span>
+            <span class= "skill badge">Jenkins</span>
+            <span class= "skill badge">Github</span>
+            <span class= "skill badge">Gitlab</span>
+          </div>
+        </div>
+        <div class="skills clearfix">
+          <div class="item-skills">
+              Computer and Networking
+              <span class="skill-level">Advanced</span>
+          </div>
+          <div class="col-sm-offset-1 col-sm-12 clearfix">
+            <span class= "skill badge">Linux</span>
+            <span class= "skill badge">TCP/IP</span>
+            <span class= "skill badge">Certificates</span>
+            <span class= "skill badge">PKI</span>
+          </div>
+        </div>
+        <div class="skills clearfix">
+          <div class="item-skills">
+              Cloud
+              <span class="skill-level">Advanced</span>
+          </div>
+          <div class="col-sm-offset-1 col-sm-12 clearfix">
+            <span class= "skill badge">Azure</span>
+            <span class= "skill badge">Gcloud</span>
+            <span class= "skill badge">Hetzner</span>
+            <span class= "skill badge">Netcup</span>
+          </div>
+        </div>
+        <div class="skills clearfix">
+          <div class="item-skills">
+              Web Development
+              <span class="skill-level">Advanced</span>
+          </div>
+          <div class="col-sm-offset-1 col-sm-12 clearfix">
+            <span class= "skill badge">HTML</span>
+            <span class= "skill badge">CSS</span>
+            <span class= "skill badge">JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+
+    <!-- PUBLICATIONS -->
+    <div class="box">
+      <h2><i class="fa fa-book ico"></i> Publications</h2>
+      <div class="publication panel panel-default">
+        <div class="panel-heading">
+          <div class="name panel-title">test</div>
+        </div>
+        <div class="panel-body">
+          <div class="year">  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>

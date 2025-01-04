@@ -1,0 +1,385 @@
+{
+  "basics": {
+    "name": "Max Mustermann",
+    "label": "Leading Automation Engineer and DevOps Advocate",
+    "image": "",
+    "email": "example@gmailcom",
+    "phone": "+41 (0)11 123 12 12",
+    "url": "https://myblog.com",
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "location": {
+      "address": "Meine Strasse 123",
+      "postalCode": "1111",
+      "city": "Hier",
+      "countryCode": "CH",
+      "region": "Kantönli",
+      "regionCode": "KI"
+    },
+    "profiles": [
+      {
+        "network": "Github",
+        "username": "example",
+        "url": "https://github.com/example"
+      },
+      {
+        "network": "Gitlab",
+        "username": "example",
+        "url": "https://gitlab.com/example"
+      },
+      {
+        "network": "Stackoverflow",
+        "username": "example",
+        "url": "https://stackoverflow.com/users/111111"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Chapter Lead Platform Engineering",
+      "company": "Company GmbH",
+      "location":"Wherever, Switzerland",
+      "department": "Software Development",
+      "url": "https://company.ch",
+      "startDate": "2024-04-01",
+      "summaryShort": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "highlights": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      ],
+      "achievements": [
+        "Achievement 1",
+        "Achievement 2",
+        "Achievement 3",
+        "Achievement 4"
+      ],
+      "tools": [
+        "Tool 1",
+        "Tool 2",
+        "Tool 3",
+        "Tool 4",
+        "Tool 5",
+        "Tool 6"
+      ]
+    },{
+      "name": "Senior Development Engineer (Cloud Team)",
+      "company": "Company GmbH",
+      "location":"Wherever, Switzerland",
+      "department": "Software Development",
+      "url": "https://company.ch",
+      "startDate": "2022-01-01",
+      "endDate": "2024-03-31",
+      "summaryShort": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "highlights": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      ],
+      "achievements": [
+        "Achievement 1",
+        "Achievement 2",
+        "Achievement 3",
+        "Achievement 4"
+      ],
+      "tools": [
+        "Tool 1",
+        "Tool 2",
+        "Tool 3",
+        "Tool 4",
+        "Tool 5",
+        "Tool 6"
+      ]
+    },{
+      "name": "Senior Development Engineer (CI/CD)",
+      "company": "Company GmbH",
+      "location": "Wherever, Switzerland",
+      "department": "Platform Engineering",
+      "url": "https://company.ch",
+      "startDate": "2017-12-01",
+      "endDate": "2021-12-31",
+      "summaryShort": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "highlights": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      ],
+      "achievements": [
+        "Achievement 1",
+        "Achievement 2",
+        "Achievement 3",
+        "Achievement 4"
+      ],
+      "tools": [
+        "Tool 1",
+        "Tool 2",
+        "Tool 3",
+        "Tool 4",
+        "Tool 5",
+        "Tool 6"
+      ]
+    },{
+      "name": "Lead DevOps Workgroup",
+      "company": "Another Company",
+      "location": "Somewhere, Switzerland",
+      "department": "Engineering Services in Department WF&IT Products",
+      "url": "https://firma.ch",
+      "startDate": "2016-09-01",
+      "endDate": "2017-11-30",
+      "summaryShort": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "highlights": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      ],
+      "achievements": [
+        "Achievement 1",
+        "Achievement 2",
+        "Achievement 3",
+        "Achievement 4"
+      ],
+      "tools": [
+        "Tool 1",
+        "Tool 2",
+        "Tool 3",
+        "Tool 4",
+        "Tool 5",
+        "Tool 6"
+      ]
+    },{
+      "name": "SW Testing Discipline Lead",
+      "company": "Another Company",
+      "location": "Somewhere, Switzerland",
+      "department": "DevOps Group in Software Development Department",
+      "url": "https://firma.ch",
+      "startDate": "2016-01-01",
+      "endDate": "2016-08-31",
+      "summaryShort": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "highlights": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      ],
+      "achievements": [
+        "Achievement 1",
+        "Achievement 2",
+        "Achievement 3",
+        "Achievement 4"
+      ],
+      "tools": [
+        "Tool 1",
+        "Tool 2",
+        "Tool 3",
+        "Tool 4",
+        "Tool 5",
+        "Tool 6"
+      ]
+    },{
+      "name": "test",
+      "company": "Another Company, Switzerland",
+      "department": "Engineering Services in Department WF&IT Products",
+      "url": "https://firma.ch",
+      "startDate": "2016-09-01",
+      "endDate": "2017-11-30",
+      "summaryShort": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "highlights": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      ],
+      "achievements": [
+        "Achievement 1",
+        "Achievement 2",
+        "Achievement 3",
+        "Achievement 4"
+      ],
+      "tools": [
+        "Tool 1",
+        "Tool 2",
+        "Tool 3",
+        "Tool 4",
+        "Tool 5",
+        "Tool 6"
+      ]
+    }],
+  "education": [{
+    "institution": "Bern University of Applied Sciences",
+    "location": "Biel, Switzerland",
+    "url": "https://www.bfh.ch/ti/en/",
+    "area": "Computer Science Engineer",
+    "speciality": "Telematics, focus in security and network design",
+    "studyType": "Bachelor",
+    "startDate": "2000-08-14",
+    "endDate": "2004-01-31",
+    "score": "5.5",
+    "courses": [
+      "Software Engineering",
+      "Operating Systems",
+      "Telematics and network technologies",
+      "Project Management",
+      "Mathematics",
+      "Economics"
+    ],
+    "summary": "3 years of full time school and one year of internship between second and third year",
+    "details": "The tudy covers a various of different areas such as software development, software engineering, operating systems basics, telematics, computer network, web technologies, project management, natural science, mathematics, economics, IT-law, communication and languages.",
+    "thesis": "Diploma thesis 'What is IAC', see <a href='http://diploma.exmaple.com'>http://diploma.example.com</a> (German only)"
+  },{
+    "area": "Electronic Technician",
+    "studyType": "Apprenticeship (VET)",
+    "startDate": "1995-08-14",
+    "endDate": "1999-07-31",
+    "institution": "A non existing company",
+    "location":"Bern, Switzerland",
+    "summary": "Apprenticeship (VET) as an electronic technician in an armament factory of the Swiss Army.",
+    "details": "This is one of programs for one of the 230 different professions. In Switzerland, many professional qualifications are obtained in upper-secondary education, while in other countries the same qualifications are obtained in tertiary level education."
+  }],
+  "certificates": [{
+    "name": "SAQ Certified Software Tester ISTQB - Foundation Level",
+    "date": "2007-02-27",
+    "issuer": "ISTQB",
+    "url": "https://www.istqb.org/"
+  },{
+    "name": "Project Leadership Program",
+    "date": "2007-02-27",
+    "issuer": "firma AG",
+    "url": "https://www.firma.com/"
+  }],
+  "skills": [{
+    "name": "Container Platform",
+    "level": "Expert",
+    "keywords": [
+      "Kubernetes",
+      "Rancher",
+      "Kyverno"
+    ]},{
+    "name": "Infrastructure as Code",
+    "level": "Expert",
+    "keywords": [
+      "Terraform",
+      "Ansible",
+      "Bash",
+      "Packer",
+      "Vagrant"
+    ]},{
+      "name": "SDLC",
+      "level": "Expert",
+      "keywords": [
+        "CI/CD",
+        "Software Testing",
+        "ArgoCD",
+        "Jenkins",
+        "Github",
+        "Gitlab"
+    ]},{
+      "name": "Computer and Networking",
+      "level": "Advanced",
+      "keywords": [
+        "Linux",
+        "TCP/IP",
+        "Certificates",
+        "PKI"
+    ]},{
+      "name": "Cloud",
+      "level": "Advanced",
+      "keywords": [
+        "Azure",
+        "Gcloud",
+        "Hetzner",
+        "Netcup"
+    ]},{
+    "name": "Web Development",
+    "level": "Advanced",
+    "keywords": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ]
+  }],
+  "languages": [{
+    "language": "German",
+    "fluency": "Native speaker"
+  },{
+    "language": "Spanish",
+    "fluency": "Very Good"
+  },{
+    "language": "English",
+    "fluency": "Very Good"
+  }],
+  "interests": [{
+    "name": "Family",
+    "keywords": [
+      "5 children",
+      "Dogs"
+    ]
+  },{
+    "name": "Sports",
+    "keywords": [
+      "Boxing",
+      "Kickboxing",
+      "Inline Skates"
+    ]
+  },{
+    "name": "IT and Cybersecurity",
+    "keywords": [
+      "Ansible",
+      "Terraform",
+      "Security",
+      "Hetzner",
+      "Linux",
+      "NixOS"
+    ]
+  }],
+  "references": [{
+    "date": "2019-11-14",
+    "name": "Max M.",
+    "type": "Reward",
+    "icon": "trophy",
+    "position": "ART Train Lead",
+    "company": "Company GmbH",
+    "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },{
+    "date": "2020-11-24",
+    "name": "Tom R.",
+    "type": "Feedback",
+    "icon": "comment",
+    "position": "PO and PM",
+    "company": "Company GmbH",
+    "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  }],
+  "projects": [{
+    "name": "Project",
+    "startDate": "2019-01-01",
+    "endDate": "2021-01-01",
+    "description": "Description...",
+    "highlights": [
+      "Won award at AIHacks 2016"
+    ],
+    "url": "https://project.com/"
+  }],
+  "publications": [{
+    "name": "test"
+  }]
+}
