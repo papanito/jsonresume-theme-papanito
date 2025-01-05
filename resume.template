@@ -218,7 +218,7 @@
               <p><i class="fa fa-building"></i> {{company}}</p>
               <p><i class="fa fa-globe"></i> {{location}}</p>
               <p><i class="fa fa-globe"></i> {{department}}</p>
-              <p>{{{details}}}</p>
+              <p>{{{summary}}}</p>
               <div>
                 <div class="row">
                   <div class="col-8">
