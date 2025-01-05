@@ -209,6 +209,9 @@ function render(resumeObject) {
         }
     }
 
+
+    resumeObject.educationSummary = resumeObject.education.slice(0,3);
+
     if (resumeObject.certificates && resumeObject.certificates.length) {
         if (resumeObject.certificates[0].name) {
             resumeObject.certificatesBool = true;
@@ -220,6 +223,8 @@ function render(resumeObject) {
             });
         }
     }
+
+    resumeObject.certificatesSummary = resumeObject.certificates.slice(0,3);
 
     if (resumeObject.projects && resumeObject.projects.length) {
         if (resumeObject.projects[0].name) {

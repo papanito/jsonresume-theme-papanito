@@ -133,6 +133,7 @@ h4 {
 }
 
 #awards,
+#certificates,
 #education,
 #volunteer,
 #work {
@@ -143,6 +144,7 @@ h4 {
 }
 
 #awards:before,
+#certificates:before,
 #volunteer:before, 
 #education:before,
 #work:before {
@@ -164,6 +166,7 @@ h4 {
 }
 
 #awards li,
+#certificates li,
 #volunteer li,
 #education li,
 #work li{
@@ -174,6 +177,7 @@ h4 {
 }
 
 #awards .year,
+#certificates .year,
 #education .year,
 #education .year-start,
 #volunteer .year,
@@ -191,16 +195,18 @@ h4 {
   border-radius: 4px;
 }
 
+#awards .year,
+#certificates .year,
+#education .year,
 #work .year{
   position: absolute;
   top: 10px;
   left: 0;
 }
 
-/* #education .year,
-#education .year-start{
+#certificates .year{
   width: 75px;
-} */
+}
 
 #volunteer .year-start,
 #education .year-start, 
@@ -214,6 +220,7 @@ h4 {
   width: 85%;
 }
 
+#summary #certificates .description, 
 #summary #volunteer .description, 
 #summary #education .description, 
 #summary #work .description{
@@ -221,6 +228,7 @@ h4 {
 }
 
 #awards .description,
+#certificates .description,
 #volunteer .description, 
 #education .description,
 #work .description{
@@ -231,6 +239,7 @@ h4 {
 }
 
 #awards .description:after,
+#certificates .description:after,
 #education .description:after,
 #volunteer .description:after,
 #work .description:after {
@@ -247,6 +256,7 @@ h4 {
 }
 
 #awards .description h3,
+#certificates .description h3,
 #education .description h3,
 #volunteer .description h3,
 #work .description h3{
@@ -257,6 +267,7 @@ h4 {
 }
 
 #awards .description p,
+#certificates .description p,
 #education .description p,
 #volunteer .description p,
 #work .description p{
@@ -265,38 +276,6 @@ h4 {
   padding: 0;
 }
 
-.job{
-  margin-bottom: 15px;
-}
-.job .details {
-  margin-left: 3%;
-  width: 95%;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-.job .where{
-  font-size: 1.2em;
-  font-weight: bold;
-}
-.job .year{
-  opacity: 0.7;
-}
-.job .profession{
-  font-size: 1.2em;
-  font-weight: bold;
-}
-.job .description{
-  line-height: 1.5em;
-}
-.work .highlights{
-  padding: 5px 0;
-  font-weight: bold;
-
-}
-.job .job-details {
-  padding-left: 5%;
-  width: 100%;
-}
 .publication {
   margin-bottom: 0;
 }
@@ -438,6 +417,7 @@ ul.list>li {
 
 .pull-right {
   float: right;
+  padding-top: 0px;
 }
 
 div.contact {
@@ -469,14 +449,37 @@ body {
 .text-header h1,
 .box h2,
 #awards .description h3,
+#certificates .description h3,
 #education .description h3,
 #work .description h3{
   font-size: 1.0em;
   margin: 0;
   padding: 0;
+  padding-top: 2px;
   font-weight: 700;
 }
+.box {
+  page-break-inside: avoid;
+  margin-bottom: -10px;
+}
 
+.box h2 {
+  page-break-before: avoid;
+  page-break-after: avoid;
+  font-size: 1.1em;
+}
+
+ul.clearfix {
+  padding-bottom: 3px;
+}
+
+#awards .description,
+#certificates .description,
+#volunteer .description, 
+#education .description,
+#work .description{
+  padding-top: 2px;
+}
 
 p {
   margin-bottom: 0.2rem;
@@ -493,10 +496,6 @@ a[href]:after {
 
 #photo{
   display: none;
-}
-
-.box {
-  margin-bottom: -10px;
 }
 
 blockquote,
@@ -545,6 +544,7 @@ blockquote,
   padding: 0 10px;
   margin: 0;
 }
+ul#certificates, 
 ul#work {
   padding-top: 0px;
 }
@@ -580,8 +580,11 @@ ul#work {
  } */
 
 #awards .year,
+#certificates .year,
 #work .year-start,
-#work .year{
+#work .year,
+#education .year,
+#education .year-start{
   width: 60px;
 }
 
@@ -590,19 +593,13 @@ ul#work {
   display: none;
 }
 
-#education .year,
-#education .year-start{
-  width: 60px;
+#certificates .year{
+  width: 45px;
 }
-
 
 #details{
   page-break-before: always;
 }
-
-/* #work li{
-  page-break-before: auto;
-} */
 
 .§contact-item .icon,
 .contact-item .title.only {
@@ -770,6 +767,14 @@ ul#work {
               <li class=" list-group-item">English<span class="skill badge pull-right">Very Good</span></li>
             </ul>
           </div>
+
+          <!-- certificates -->
+          <div class="box">
+            <h2><i class="fa fa-certificate ico"></i> Certificates</h2>
+            <ul id="certificates" class="clearfix">
+            </ul>
+          </div>
+
           <!-- HOBBIES -->
           <div class="box">
             <h2><i class="fa fa-heart ico"></i> Interests</h2>
@@ -819,7 +824,9 @@ ul#work {
             <div class="description pull-right">
               <h3>Chapter Lead Platform Engineering</h3>
               <p><i class="fa fa-building"></i> Company GmbH</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p><i class="fa fa-globe"></i> Wherever, Switzerland</p>
+              <p><i class="fa fa-globe"></i> Software Development</p>
+              <p></p>
               <div>
                 <div class="row">
                   <div class="col-8">
@@ -865,7 +872,9 @@ ul#work {
             <div class="description pull-right">
               <h3>Senior Development Engineer (Cloud Team)</h3>
               <p><i class="fa fa-building"></i> Company GmbH</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p><i class="fa fa-globe"></i> Wherever, Switzerland</p>
+              <p><i class="fa fa-globe"></i> Software Development</p>
+              <p></p>
               <div>
                 <div class="row">
                   <div class="col-8">
@@ -911,7 +920,9 @@ ul#work {
             <div class="description pull-right">
               <h3>Senior Development Engineer (CI&#x2F;CD)</h3>
               <p><i class="fa fa-building"></i> Company GmbH</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p><i class="fa fa-globe"></i> Wherever, Switzerland</p>
+              <p><i class="fa fa-globe"></i> Platform Engineering</p>
+              <p></p>
               <div>
                 <div class="row">
                   <div class="col-8">
@@ -957,7 +968,9 @@ ul#work {
             <div class="description pull-right">
               <h3>Lead DevOps Workgroup</h3>
               <p><i class="fa fa-building"></i> Another Company</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p><i class="fa fa-globe"></i> Somewhere, Switzerland</p>
+              <p><i class="fa fa-globe"></i> Engineering Services in Department WF&amp;IT Products</p>
+              <p></p>
               <div>
                 <div class="row">
                   <div class="col-8">
@@ -1003,7 +1016,9 @@ ul#work {
             <div class="description pull-right">
               <h3>SW Testing Discipline Lead</h3>
               <p><i class="fa fa-building"></i> Another Company</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p><i class="fa fa-globe"></i> Somewhere, Switzerland</p>
+              <p><i class="fa fa-globe"></i> DevOps Group in Software Development Department</p>
+              <p></p>
               <div>
                 <div class="row">
                   <div class="col-8">
@@ -1049,7 +1064,9 @@ ul#work {
             <div class="description pull-right">
               <h3>test</h3>
               <p><i class="fa fa-building"></i> Another Company, Switzerland</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p><i class="fa fa-globe"></i> </p>
+              <p><i class="fa fa-globe"></i> Engineering Services in Department WF&amp;IT Products</p>
+              <p></p>
               <div>
                 <div class="row">
                   <div class="col-8">
@@ -1122,7 +1139,9 @@ ul#work {
               <h3>Computer Science Engineer (Bachelor)</h3>
               <p><i class= "fa-solid fa-graduation-cap ico"></i> Bern University of Applied Sciences</p>
               <p><i class= "fa-solid fa-bullseye ico"></i> Telematics, focus in security and network design</p>
+              <p><i class= "fa-solid fa-university ico"></i> </p>
               <p>The tudy covers a various of different areas such as software development, software engineering, operating systems basics, telematics, computer network, web technologies, project management, natural science, mathematics, economics, IT-law, communication and languages.</p>
+              <p>Diploma thesis &#39;What is IAC&#39;, see &lt;a href&#x3D;&#39;http:&#x2F;&#x2F;diploma.exmaple.com&#39;&gt;http:&#x2F;&#x2F;diploma.example.com&lt;&#x2F;a&gt; (German only)</p>
               <ul class="list">
                   <li><i class="fa-solid fa-book">&nbsp;</i>Software Engineering</li>
                   <li><i class="fa-solid fa-book">&nbsp;</i>Operating Systems</li>
@@ -1140,7 +1159,33 @@ ul#work {
               <h3>Electronic Technician (Apprenticeship (VET))</h3>
               <p><i class= "fa-solid fa-graduation-cap ico"></i> A non existing company</p>
               <p><i class= "fa-solid fa-bullseye ico"></i> </p>
+              <p><i class= "fa-solid fa-university ico"></i> </p>
               <p>This is one of programs for one of the 230 different professions. In Switzerland, many professional qualifications are obtained in upper-secondary education, while in other countries the same qualifications are obtained in tertiary level education.</p>
+              <p></p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- CERTIFICATES -->
+      <div class="box">
+        <h2><i class="fa fa-certificate ico"></i> Certificates</h2>
+        <ul id="education" class="clearfix">
+          <li>
+            <div class="year pull-left">2007&nbsp;&nbsp;Feb</div>
+            <div class="description pull-right">
+              <h3>SAQ Certified Software Tester</h3>
+              <p><i class="fa fa-building ico"></i>&nbsp;<a href='https:&#x2F;&#x2F;www.istqb.org&#x2F;'>ISTQB</a></p>
+              <p><i class= "fa-solid fa-university ico"></i> </p>
+              <p></p>
+            </div>
+          </li>
+          <li>
+            <div class="year pull-left">2013&nbsp;&nbsp;Feb</div>
+            <div class="description pull-right">
+              <h3>Project Leadership Program</h3>
+              <p><i class="fa fa-building ico"></i>&nbsp;<a href='https:&#x2F;&#x2F;www.firma.com&#x2F;'>firma AG</a></p>
+              <p><i class= "fa-solid fa-university ico"></i> </p>
+              <p></p>
             </div>
           </li>
         </ul>

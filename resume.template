@@ -99,7 +99,7 @@
           <div class="box">
             <h2><i class="fa fa-university ico"></i> Education</h2>
             <ul id="education" class="clearfix">
-              {{#education}}
+              {{#educationSummary}}
               <li>
                 <div class="year-start pull-left">{{startDateYear}}&nbsp;&nbsp;{{startDateMonthShort}}</div>
                 <div class="year pull-left">{{endDateYear}}&nbsp;&nbsp;{{endDateMonthShort}}</div>
@@ -111,7 +111,7 @@
                   {{/institution}}
                 </div>
               </li>
-              {{/education}}
+              {{/educationSummary}}
             </ul>
           </div>
           {{/educationBool}}
@@ -169,7 +169,7 @@
           <div class="box">
             <h2><i class="fa fa-certificate ico"></i> Certificates</h2>
             <ul id="certificates" class="clearfix">
-              {{#certificates}}
+              {{#certificatesSummary}}
               <li>
                 <div class="description pull-right">
                   <h3>{{name}}</h3>
@@ -178,7 +178,7 @@
                 </div>
                 <div class="year pull-left">{{year}} {{monthShort}}</div>
               </li>
-              {{/certificates}}
+              {{/certificatesSummary}}
             </ul>
           </div>
           {{/certificatesBool}}
@@ -216,7 +216,9 @@
             <div class="description pull-right">
               <h3>{{name}}</h3>
               <p><i class="fa fa-building"></i> {{company}}</p>
-              <p>{{{summary}}}</p>
+              <p><i class="fa fa-globe"></i> {{location}}</p>
+              <p><i class="fa fa-globe"></i> {{department}}</p>
+              <p>{{{details}}}</p>
               <div>
                 <div class="row">
                   <div class="col-8">
