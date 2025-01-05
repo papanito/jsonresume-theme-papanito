@@ -13,14 +13,37 @@ body {
 .text-header h1,
 .box h2,
 #awards .description h3,
+#certificates .description h3,
 #education .description h3,
 #work .description h3{
   font-size: 1.0em;
   margin: 0;
   padding: 0;
+  padding-top: 2px;
   font-weight: 700;
 }
+.box {
+  page-break-inside: avoid;
+  margin-bottom: -10px;
+}
 
+.box h2 {
+  page-break-before: avoid;
+  page-break-after: avoid;
+  font-size: 1.1em;
+}
+
+ul.clearfix {
+  padding-bottom: 3px;
+}
+
+#awards .description,
+#certificates .description,
+#volunteer .description, 
+#education .description,
+#work .description{
+  padding-top: 2px;
+}
 
 p {
   margin-bottom: 0.2rem;
@@ -37,10 +60,6 @@ a[href]:after {
 
 #photo{
   display: none;
-}
-
-.box {
-  margin-bottom: -10px;
 }
 
 blockquote,
@@ -89,6 +108,7 @@ blockquote,
   padding: 0 10px;
   margin: 0;
 }
+ul#certificates, 
 ul#work {
   padding-top: 0px;
 }
@@ -124,8 +144,11 @@ ul#work {
  } */
 
 #awards .year,
+#certificates .year,
 #work .year-start,
-#work .year{
+#work .year,
+#education .year,
+#education .year-start{
   width: 60px;
 }
 
@@ -134,19 +157,13 @@ ul#work {
   display: none;
 }
 
-#education .year,
-#education .year-start{
-  width: 60px;
+#certificates .year{
+  width: 45px;
 }
-
 
 #details{
   page-break-before: always;
 }
-
-/* #work li{
-  page-break-before: auto;
-} */
 
 .§contact-item .icon,
 .contact-item .title.only {

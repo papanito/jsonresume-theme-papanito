@@ -290,7 +290,9 @@
               {{#institution}}
               <p><i class= "fa-solid fa-graduation-cap ico"></i> {{institution}}</p>
               <p><i class= "fa-solid fa-bullseye ico"></i> {{speciality}}</p>
+              <p><i class= "fa-solid fa-university ico"></i> {{outcome}}</p>
               <p>{{details}}</p>
+              <p>{{thesis}}</p>
               {{/institution}}
               {{#gpa}}
               <p>
@@ -309,7 +311,26 @@
           {{/education}}
         </ul>
       </div>
-      {{/educationBool}}  
+      {{/educationBool}}
+      {{#certificatesBool}}
+      <!-- CERTIFICATES -->
+      <div class="box">
+        <h2><i class="fa fa-certificate ico"></i> Certificates</h2>
+        <ul id="education" class="clearfix">
+          {{#certificates}}
+          <li>
+            <div class="year pull-left">{{year}}&nbsp;&nbsp;{{monthShort}}</div>
+            <div class="description pull-right">
+              <h3>{{name}}</h3>
+              <p><i class="fa fa-building ico"></i>&nbsp;<a href='{{url}}'>{{issuer}}</a></p>
+              <p><i class= "fa-solid fa-university ico"></i> {{outcome}}</p>
+              <p>{{details}}</p>
+            </div>
+          </li>
+          {{/certificates}}
+        </ul>
+      </div>
+      {{/certificatesBool}}
       {{#skillsBool}}
       <!-- SKILLS -->
       <div class="box">
