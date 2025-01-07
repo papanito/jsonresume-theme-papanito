@@ -332,16 +332,23 @@ div#info .contact-item .icon>a{
   font-weight: 600;
 }
 .interest,
+.tool,
 .skill{
-  color: var(--main-color-secondary);
+  color: var(--main-color-primary);
   display: inline-block;
   margin-right: 5px;
   margin-bottom: 5px;
   padding: 5px 10px;
-  background: #32475c;
+  background: var(--main-color-secondary);
+  border: var(--main-color-primary) 2px solid;
   position: relative;
   font-size: .85em;
 }
+
+.tool{
+  padding: 2px 8px;
+}
+
 .skill-level {
   background-color: #227c74;
   border-radius: 4px;

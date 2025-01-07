@@ -219,40 +219,39 @@
               <p><i class="fa fa-globe"></i> {{location}}</p>
               <p><i class="fa fa-globe"></i> {{department}}</p>
               <p>{{{summary}}}</p>
+              <p>
+                {{#boolTools}}
+                <div class="col-sm-offset-1 col-sm-12 clearfix">
+                  {{#tools}}
+                  <span class= "tool badge">{{{.}}}</span>
+                  {{/tools}}
+                </div>
+                {{/boolTools}}
+              </p>
               <div>
                 <div class="row">
-                  <div class="col-8">
-                    {{#boolHighlights}}
-                    <div class="highlights"><h4>Tasks</h4></div>
-                    <ul class="list">
-                      {{#highlights}}
-                      <li><i class="fa-solid fa-clipboard"></i> {{{.}}}</li>
-                      {{/highlights}}
-                    </ul>
-                    {{/boolHighlights}}
-                  </div>
                   <div class="col-sm">
-                    {{#boolTools}}
-                    <div class="highlights"><h4>Tech Stack</h4></div>
-                    <ul class="list">
-                      {{#tools}}
-                      <li><i class="fa-solid fa-gear"></i> {{{.}}}</li>
-                      {{/tools}}
-                    </ul>
-                    {{/boolTools}}
+                      {{#boolHighlights}}
+                      <div class="highlights"><h4>Tasks</h4></div>
+                      <ul class="list">
+                        {{#highlights}}
+                        <li><i class="fa-solid fa-clipboard"></i> {{{.}}}</li>
+                        {{/highlights}}
+                      </ul>
+                      {{/boolHighlights}}
                   </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-sm">
-                  {{#boolAchievements}}
-                  <div class="highlights"><h4>Achievements</h4></div>
-                  <ul class="list">
-                    {{#achievements}}
-                    <li><i class="fa-solid fa-trophy">&nbsp;</i>{{{.}}}</li>
-                    {{/achievements}}
-                  </ul>
-                  {{/boolAchievements}}
+                <div class="row">
+                  <div class="col-sm">
+                    {{#boolAchievements}}
+                    <div class="highlights"><h4>Achievements</h4></div>
+                    <ul class="list">
+                      {{#achievements}}
+                      <li><i class="fa-solid fa-trophy">&nbsp;</i>{{{.}}}</li>
+                      {{/achievements}}
+                    </ul>
+                    {{/boolAchievements}}
+                  </div>
                 </div>
               </div>
             </div>
@@ -272,7 +271,6 @@
           <footer>
             <div><b><i class="fa-solid fa-{{icon}}">&nbsp;</i>{{type}}</b>&nbsp;{{date}}, <a href="{{website}}" target= "_blank"> {{name}}</a>&nbsp;({{position}} at {{company}})</div>
           </footer>
-
           <div class="quote">{{{reference}}}</div>
         </blockquote><br>
         {{/references}}
