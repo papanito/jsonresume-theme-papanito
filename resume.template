@@ -217,7 +217,7 @@
               <h3>{{name}}</h3>
               <p><i class="fa fa-building"></i> {{company}}</p>
               <p><i class="fa fa-globe"></i> {{location}}</p>
-              <p><i class="fa fa-globe"></i> {{department}}</p>
+              <p><i class="fa fa-briefcase"></i> {{department}}</p>
               <p>{{{summary}}}</p>
               <p>
                 {{#boolTools}}
